@@ -1,0 +1,14 @@
+{
+  "eyebrow": "International patients",
+  "title": "Care that travels well",
+  "lead": "Coming from outside India? We take care of more than the medicine.",
+  "what_we_handle_title": "What we handle",
+  "what_we_handle": [
+    { "name": "Medical visa support", "body": "Invitation letters and documentation to support your visa application." },
+    { "name": "Airport pickup", "body": "We arrange transport between the airport and the hospital." },
+    { "name": "Accommodation", "body": "Partner guest houses near the hospital, vetted for cleanliness and comfort." },
+    { "name": "Coordinator", "body": "A dedicated coordinator stays in touch from before you arrive until you're home." }
+  ],
+  "languages_title": "Languages spoken at the hospital",
+  "contact_coordinator": "Talk to our international coordinator"
+}

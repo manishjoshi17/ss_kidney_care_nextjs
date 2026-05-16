@@ -1,0 +1,621 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================================
+ * SS Kidney Care — token system
+ *
+ * Hard rules (see CLAUDE.md §3):
+ *  - No hardcoded colors outside this file.
+ *  - No Tailwind grayscale (gray-*, slate-*, …) in components.
+ *  - No literal durations/easings — use --duration-* / --ease-*.
+ *  - No literal radius/shadow — use --radius-* / --shadow-*.
+ * ========================================================================== */
+
+:root {
+  /* ===================================================================
+   * Brand — 11-step primary scale (deep medical sea-green) + accent
+   * ================================================================= */
+  /* Primary scale — pivoted to the brand colours.
+   * Light steps (50–400): brand teal #22B8C6 family (hue ≈ 210–215).
+   * Mid steps  (500–700): teal-blue transition.
+   * Dark steps (800–950): brand navy #0E3A5C family (hue ≈ 245).
+   * primary-400 is the brand teal; primary-900 is the brand navy. */
+  --primary-50:  oklch(0.975 0.020 212);
+  --primary-100: oklch(0.945 0.035 212);
+  --primary-200: oklch(0.885 0.060 213);
+  --primary-300: oklch(0.815 0.090 213);
+  --primary-400: oklch(0.735 0.115 213);
+  --primary-500: oklch(0.640 0.118 218);
+  --primary-600: oklch(0.545 0.118 224);
+  --primary-700: oklch(0.460 0.105 232);
+  --primary-800: oklch(0.380 0.085 240);
+  --primary-900: oklch(0.310 0.065 247);
+  --primary-950: oklch(0.220 0.050 247);
+  --primary: var(--primary-600);
+  --primary-foreground: oklch(0.97 0.018 80);
+  --primary-deep: var(--primary-700);
+  --primary-soft: var(--primary-100);
+
+  /* Accent — warm clay/terracotta (rejected: coral, lime, saffron) */
+  --accent-50:  oklch(0.970 0.015 50);
+  --accent-100: oklch(0.935 0.035 50);
+  --accent-200: oklch(0.870 0.060 48);
+  --accent-300: oklch(0.790 0.090 46);
+  --accent-400: oklch(0.720 0.115 44);
+  --accent-500: oklch(0.655 0.135 42);
+  --accent-600: oklch(0.580 0.140 40);
+  --accent-700: oklch(0.490 0.125 38);
+  --accent: var(--accent-500);
+  --accent-foreground: oklch(0.98 0.012 80);
+  --accent-deep: var(--accent-600);
+
+  /* ===================================================================
+   * Surface system — lightest → darkest
+   * ================================================================= */
+  --background:      oklch(0.995 0.003 200);
+  --surface:         oklch(1 0 0);
+  --surface-cream:   oklch(0.97 0.018 75);
+  --surface-mint:    oklch(0.96 0.030 212);   /* pale cyan-mint — brand-teal family */
+  --surface-sky:     oklch(0.96 0.022 222);   /* pale sky — brand-blue family */
+  --surface-forest:  oklch(0.30 0.075 215);   /* deep teal — brand-coherent dark surface */
+  /* --surface-navy derived from the brand wordmark colour #0E3A5C. */
+  --surface-navy:    var(--brand-navy);
+
+  /* ===================================================================
+   * Brand colours — extracted from /public/brand/.
+   * --brand-navy = wordmark · --brand-teal = mark accent.
+   * The primary scale now ladders between these two (light → teal → navy),
+   * so brand-teal and brand-navy are aliases for steps on the same scale.
+   * ================================================================= */
+  --brand-navy:      var(--primary-900);      /* #0E3A5C wordmark */
+  --brand-teal:      var(--primary-400);      /* mark accent */
+
+  /* ===================================================================
+   * Gradients — named, reusable
+   * ================================================================= */
+  --gradient-hero: linear-gradient(
+    180deg,
+    oklch(0.92 0.035 213) 0%,
+    oklch(0.97 0.018 213) 100%
+  );
+  --gradient-cta: linear-gradient(
+    135deg,
+    var(--surface-forest) 0%,
+    var(--brand-navy) 100%
+  );
+
+  /* ===================================================================
+   * Text — neutrals tinted warm (75°), NOT cool
+   * ================================================================= */
+  --foreground:        oklch(0.20 0.018 75);
+  --foreground-muted:  oklch(0.42 0.015 75);
+  --muted:             oklch(0.96 0.008 75);
+  --muted-foreground:  oklch(0.50 0.012 75);
+
+  /* ===================================================================
+   * Borders — context-aware
+   * ================================================================= */
+  --border-hairline:  oklch(0.94 0.008 75);
+  --border:           oklch(0.91 0.012 75);
+  --border-strong:    oklch(0.85 0.020 75);
+  --border-emphasis:  var(--primary);
+  --border-on-mint:   oklch(0.88 0.025 175);
+  --border-on-cream:  oklch(0.88 0.025 75);
+  --input:            var(--border);
+  --ring:             var(--primary);
+
+  /* ===================================================================
+   * Status
+   * ================================================================= */
+  --success:              oklch(0.66 0.14 150);
+  --success-foreground:   oklch(0.99 0.005 150);
+  --warning:              oklch(0.76 0.15 80);
+  --warning-foreground:   oklch(0.20 0.040 80);
+  --destructive:          oklch(0.60 0.20 25);
+  --destructive-foreground: oklch(0.98 0.012 25);
+
+  /* ===================================================================
+   * Stat-cycling accents
+   * ================================================================= */
+  --stat-sky:   oklch(0.88 0.06 215);
+  --stat-amber: oklch(0.85 0.12 80);
+  --stat-sage:  oklch(0.88 0.06 165);
+
+  /* ===================================================================
+   * On-color text pairs
+   * ================================================================= */
+  --on-primary: oklch(0.99 0 0);
+  --on-accent:  oklch(0.99 0 0);
+  --on-forest:  oklch(0.97 0.018 75);
+  --on-navy:    oklch(0.99 0 0);
+  --on-cream:   var(--foreground);
+  --on-mint:    var(--foreground);
+  --on-sky:     var(--foreground);
+
+  /* ===================================================================
+   * Radii — semantic, not derivational
+   * ================================================================= */
+  --radius-pill:        9999px;
+  --radius-chip:        0.625rem;
+  --radius-input:       0.625rem;
+  --radius-button:      0.75rem;
+  --radius-card:        1rem;
+  --radius-card-mobile: 1.25rem;
+  --radius-section:     1.75rem;
+  --radius-image:       0.625rem;
+  --radius:             var(--radius-button);
+
+  /* ===================================================================
+   * Shadows — primary-tinted, never neutral-gray
+   * ================================================================= */
+  --shadow-1: 0 1px 2px 0 oklch(from var(--primary-900) l c h / 0.04),
+              0 1px 1px 0 oklch(from var(--primary-900) l c h / 0.06);
+  --shadow-2: 0 3px 6px -1px oklch(from var(--primary-900) l c h / 0.06),
+              0 8px 16px -4px oklch(from var(--primary-900) l c h / 0.08);
+  --shadow-3: 0 8px 16px -4px oklch(from var(--primary-900) l c h / 0.10),
+              0 24px 48px -12px oklch(from var(--primary-900) l c h / 0.16);
+  --shadow-glow:        0 0 0 4px oklch(from var(--primary-600) l c h / 0.18);
+  --shadow-glow-accent: 0 0 0 4px oklch(from var(--accent-500) l c h / 0.22);
+  --shadow-inset:       inset 0 1px 0 0 oklch(from var(--primary-900) l c h / 0.04);
+
+  /* ===================================================================
+   * Easing & timing tokens
+   * ================================================================= */
+  --ease-out-soft:      cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-snap:      cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-pause:  cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring-gentle: cubic-bezier(0.34, 1.45, 0.64, 1);
+  --duration-quick:     120ms;
+  --duration-fast:      180ms;
+  --duration-base:      280ms;
+  --duration-slow:      480ms;
+  --duration-emphatic:  720ms;
+
+  /* ===================================================================
+   * Typography scale — clamp-based for fluid response
+   * ================================================================= */
+  --text-display: clamp(2.75rem, 5vw + 1rem, 5rem);
+  --text-h1:      clamp(2.25rem, 3.5vw + 0.5rem, 3.75rem);
+  --text-h2:      clamp(1.75rem, 2vw + 0.625rem, 2.5rem);
+  --text-h3:      clamp(1.375rem, 0.75vw + 1rem, 1.625rem);
+  --text-h4:      1.125rem;
+  --text-lead:    clamp(1.125rem, 0.4vw + 1rem, 1.25rem);
+  --text-body:    1rem;
+  --text-small:   0.875rem;
+  --text-eyebrow: 0.75rem;
+  --text-tiny:    0.6875rem;
+  --leading-multiplier: 1;
+
+  /* ===================================================================
+   * Spacing rhythm — semantic
+   * ================================================================= */
+  --space-section-y:   clamp(4rem, 5vw + 2rem, 7rem);
+  --space-block-y:     clamp(2.5rem, 2vw + 1.5rem, 4rem);
+  --space-component-y: clamp(1.25rem, 1vw + 0.75rem, 1.75rem);
+  --space-element-y:   0.75rem;
+  --space-tight:       0.375rem;
+  --gutter:            clamp(1rem, 2vw, 2rem);
+  --column-gap:        clamp(1rem, 1.5vw, 2rem);
+
+  /* ===================================================================
+   * Control sizing — shared by Button / Input / Textarea / Select
+   * ================================================================= */
+  --control-h-sm: 2.25rem;
+  --control-h-md: 3rem;
+  --control-h-lg: 3.5rem;
+  --control-h-xl: 3.625rem;
+  --control-px-sm: 0.75rem;
+  --control-px-md: 1rem;
+  --control-px-lg: 1.25rem;
+  --control-px-xl: 2rem;
+  --control-radius-sm: var(--radius-chip);
+  --control-radius-md: var(--radius-button);
+  --control-radius-lg: var(--radius-button);
+  --control-border-w:  1.5px;
+  --control-font-sm: 0.875rem;
+  --control-font-md: 1rem;
+  --control-font-lg: 1rem;
+
+  /* ===================================================================
+   * Stroke weights & icon sizes
+   * ================================================================= */
+  --stroke-thin:   1.25;
+  --stroke-base:   1.75;
+  --stroke-strong: 2.25;
+  --icon-sm:  1rem;
+  --icon-md:  1.25rem;
+  --icon-lg:  1.5rem;
+  --icon-xl:  1.75rem;
+
+  /* ===================================================================
+   * Aspect ratio tokens (declared as numbers for use in CSS)
+   * ================================================================= */
+  --aspect-hero: 16 / 9;
+  --aspect-hero-mobile: 4 / 5;
+  --aspect-card: 3 / 2;
+  --aspect-portrait: 4 / 5;
+  --aspect-square: 1 / 1;
+}
+
+/* ===================================================================
+ * Indic locale tweaks — bump line-height for matra-stack legibility
+ * ================================================================= */
+:root[lang="hi"] { --leading-multiplier: 1.07; }
+:root[lang="or"] { --leading-multiplier: 1.09; }
+
+/* ===================================================================
+ * Tailwind v4 @theme bridge — maps CSS variables to Tailwind tokens
+ * ================================================================= */
+@theme inline {
+  /* Colors */
+  --color-background:          var(--background);
+  --color-surface:             var(--surface);
+  --color-surface-cream:       var(--surface-cream);
+  --color-surface-mint:        var(--surface-mint);
+  --color-surface-sky:         var(--surface-sky);
+  --color-surface-forest:      var(--surface-forest);
+  --color-surface-navy:        var(--surface-navy);
+  --color-brand-navy:          var(--brand-navy);
+  --color-brand-teal:          var(--brand-teal);
+
+  --color-foreground:          var(--foreground);
+  --color-foreground-muted:    var(--foreground-muted);
+  --color-muted:               var(--muted);
+  --color-muted-foreground:    var(--muted-foreground);
+
+  --color-primary:             var(--primary);
+  --color-primary-50:          var(--primary-50);
+  --color-primary-100:         var(--primary-100);
+  --color-primary-200:         var(--primary-200);
+  --color-primary-300:         var(--primary-300);
+  --color-primary-400:         var(--primary-400);
+  --color-primary-500:         var(--primary-500);
+  --color-primary-600:         var(--primary-600);
+  --color-primary-700:         var(--primary-700);
+  --color-primary-800:         var(--primary-800);
+  --color-primary-900:         var(--primary-900);
+  --color-primary-950:         var(--primary-950);
+  --color-primary-foreground:  var(--primary-foreground);
+  --color-primary-deep:        var(--primary-deep);
+  --color-primary-soft:        var(--primary-soft);
+
+  --color-accent:              var(--accent);
+  --color-accent-100:          var(--accent-100);
+  --color-accent-200:          var(--accent-200);
+  --color-accent-300:          var(--accent-300);
+  --color-accent-400:          var(--accent-400);
+  --color-accent-500:          var(--accent-500);
+  --color-accent-600:          var(--accent-600);
+  --color-accent-700:          var(--accent-700);
+  --color-accent-foreground:   var(--accent-foreground);
+  --color-accent-deep:         var(--accent-deep);
+
+  --color-border:              var(--border);
+  --color-border-hairline:     var(--border-hairline);
+  --color-border-strong:       var(--border-strong);
+  --color-border-emphasis:     var(--border-emphasis);
+  --color-border-on-mint:      var(--border-on-mint);
+  --color-border-on-cream:     var(--border-on-cream);
+  --color-input:               var(--input);
+  --color-ring:                var(--ring);
+
+  --color-success:             var(--success);
+  --color-success-foreground:  var(--success-foreground);
+  --color-warning:             var(--warning);
+  --color-warning-foreground:  var(--warning-foreground);
+  --color-destructive:         var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-stat-sky:            var(--stat-sky);
+  --color-stat-amber:          var(--stat-amber);
+  --color-stat-sage:           var(--stat-sage);
+
+  --color-on-primary:          var(--on-primary);
+  --color-on-accent:           var(--on-accent);
+  --color-on-forest:           var(--on-forest);
+  --color-on-navy:             var(--on-navy);
+  --color-on-cream:            var(--on-cream);
+  --color-on-mint:             var(--on-mint);
+  --color-on-sky:              var(--on-sky);
+
+  /* Fonts */
+  --font-sans:    var(--font-sans);
+  --font-display: var(--font-display);
+  --font-deva:    var(--font-deva);
+  --font-oriya:   var(--font-oriya);
+
+  /* Radii */
+  --radius-pill: var(--radius-pill);
+  --radius-chip: var(--radius-chip);
+  --radius-input: var(--radius-input);
+  --radius-button: var(--radius-button);
+  --radius-card: var(--radius-card);
+  --radius-card-mobile: var(--radius-card-mobile);
+  --radius-section: var(--radius-section);
+  --radius-image: var(--radius-image);
+
+  /* Shadows */
+  --shadow-1: var(--shadow-1);
+  --shadow-2: var(--shadow-2);
+  --shadow-3: var(--shadow-3);
+  --shadow-glow: var(--shadow-glow);
+  --shadow-glow-accent: var(--shadow-glow-accent);
+}
+
+/* ===================================================================
+ * Base styles
+ * ================================================================= */
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scrollbar-gutter: stable both-edges;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    font-size: var(--text-body);
+    line-height: calc(1.65 * var(--leading-multiplier));
+    font-feature-settings: "kern", "liga", "calt", "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :root[lang="hi"] body { font-family: var(--font-deva), var(--font-sans), system-ui, sans-serif; }
+  :root[lang="or"] body { font-family: var(--font-oriya), var(--font-sans), system-ui, sans-serif; }
+
+  /* Branded text selection — never browser-default blue */
+  ::selection {
+    background-color: color-mix(in oklch, var(--accent-500) 25%, transparent);
+    color: var(--foreground);
+  }
+
+  /* Scrollbar — primary-tinted, never gray */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklch, var(--primary-500) 35%, transparent);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in oklch, var(--primary-600) 55%, transparent);
+  }
+  html { scrollbar-color: color-mix(in oklch, var(--primary-500) 35%, transparent) transparent; }
+
+  /* Focus ring — designed, never browser default */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+    border-radius: var(--radius-input);
+  }
+
+  /* Dark surface contexts get a high-contrast brand-teal ring — echoes the logomark accent. */
+  [data-surface="forest"] :focus-visible,
+  [data-surface="navy"] :focus-visible {
+    outline-color: var(--brand-teal);
+    box-shadow: 0 0 0 4px color-mix(in oklch, var(--brand-teal) 26%, transparent);
+  }
+}
+
+/* ===================================================================
+ * Typography utilities — applied via primitives <Heading>, <Prose>
+ * ================================================================= */
+@layer components {
+  .text-display {
+    font-family: var(--font-display), serif;
+    font-size: var(--text-display);
+    line-height: calc(0.95 * var(--leading-multiplier));
+    letter-spacing: -0.035em;
+    font-weight: 400;
+    text-wrap: balance;
+    font-feature-settings: "ss01", "kern";
+  }
+
+  .text-h1 {
+    font-family: var(--font-display), serif;
+    font-size: var(--text-h1);
+    line-height: calc(1.05 * var(--leading-multiplier));
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  .text-h2 {
+    font-family: var(--font-display), serif;
+    font-size: var(--text-h2);
+    line-height: calc(1.10 * var(--leading-multiplier));
+    letter-spacing: -0.020em;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  .text-h3 {
+    font-family: var(--font-sans), sans-serif;
+    font-size: var(--text-h3);
+    line-height: calc(1.20 * var(--leading-multiplier));
+    letter-spacing: -0.010em;
+    font-weight: 600;
+  }
+
+  .text-h4 {
+    font-family: var(--font-sans), sans-serif;
+    font-size: var(--text-h4);
+    line-height: calc(1.30 * var(--leading-multiplier));
+    font-weight: 600;
+  }
+
+  .text-lead {
+    font-size: var(--text-lead);
+    line-height: calc(1.5 * var(--leading-multiplier));
+    letter-spacing: -0.005em;
+    color: var(--foreground-muted);
+    text-wrap: pretty;
+  }
+
+  .text-eyebrow {
+    font-size: var(--text-eyebrow);
+    line-height: 1;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--muted-foreground);
+  }
+
+  .text-body {
+    font-size: var(--text-body);
+    line-height: calc(1.65 * var(--leading-multiplier));
+    text-wrap: pretty;
+  }
+
+  .text-small {
+    font-size: var(--text-small);
+    line-height: calc(1.5 * var(--leading-multiplier));
+  }
+
+  .text-tiny {
+    font-size: var(--text-tiny);
+    line-height: 1.4;
+  }
+
+  .text-stat-figure {
+    font-family: var(--font-display), serif;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "ss01";
+    letter-spacing: -0.02em;
+  }
+
+  /* Prose-style readable measure */
+  .prose-content {
+    max-width: 65ch;
+    line-height: calc(1.7 * var(--leading-multiplier));
+    text-wrap: pretty;
+  }
+  .prose-content > * + * { margin-top: var(--space-component-y); }
+  .prose-content h2 { margin-top: var(--space-block-y); }
+  .prose-content h3 { margin-top: var(--space-component-y); }
+  .prose-content blockquote {
+    border-left: 2px solid var(--accent);
+    padding-left: 1rem;
+    font-style: italic;
+    color: var(--foreground-muted);
+    hanging-punctuation: first last;
+  }
+  .prose-content ul, .prose-content ol { padding-left: 1.5rem; }
+  .prose-content ul { list-style: disc; }
+  .prose-content ol { list-style: decimal; }
+  .prose-content li + li { margin-top: var(--space-tight); }
+}
+
+/* ===================================================================
+ * Component utilities
+ * ================================================================= */
+@layer utilities {
+  /* Container — bounded width with token-driven gutter */
+  .container-default {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    max-width: 1280px;
+  }
+  .container-narrow {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    max-width: 880px;
+  }
+  .container-wide {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    max-width: 1440px;
+  }
+
+  /* Photo color grade — applied as a token, not a one-off filter */
+  .photo-graded {
+    filter: saturate(1.04) contrast(1.03) brightness(1.01) sepia(0.04);
+  }
+
+  /* Section spacing scale — padding + margin variants share the same tokens */
+  .py-section { padding-block: var(--space-section-y); }
+  .py-block   { padding-block: var(--space-block-y); }
+  .my-section { margin-block: var(--space-section-y); }
+  .my-block   { margin-block: var(--space-block-y); }
+  .mt-section { margin-block-start: var(--space-section-y); }
+  .mt-block   { margin-block-start: var(--space-block-y); }
+  .mb-section { margin-block-end: var(--space-section-y); }
+  .mb-block   { margin-block-end: var(--space-block-y); }
+
+  /* Skip-to-content link — visible on focus */
+  .skip-link {
+    position: absolute;
+    inset-block-start: -100px;
+    inset-inline-start: 1rem;
+    z-index: 100;
+    padding: 0.75rem 1.25rem;
+    background: var(--foreground);
+    color: var(--background);
+    border-radius: var(--radius-button);
+    font-weight: 600;
+    transition: inset-block-start var(--duration-fast) var(--ease-out-snap);
+  }
+  .skip-link:focus { inset-block-start: 1rem; }
+
+  /* Decorative cursor scale on hover — disabled under reduced-motion */
+  @media (prefers-reduced-motion: no-preference) {
+    .cursor-hover-scale { transition: transform var(--duration-quick) var(--ease-out-snap); }
+    .cursor-hover-scale:hover { transform: scale(1.02); }
+  }
+
+  /* Hero gradient utility */
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-cta  { background-image: var(--gradient-cta); }
+
+  /* Grain overlay (subtle premium texture) */
+  .with-grain { position: relative; }
+  .with-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    mix-blend-mode: multiply;
+  }
+}
+
+/* ===================================================================
+ * Reduced-motion default — disables decorative motion across the app
+ * ================================================================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===================================================================
+ * Print stylesheet — insurance pre-auth friendly
+ * ================================================================= */
+@media print {
+  *, *::before, *::after { background: transparent !important; color: black !important; box-shadow: none !important; text-shadow: none !important; }
+  header, footer, nav, [data-print="hidden"] { display: none !important; }
+  .with-grain::after { display: none !important; }
+  a { text-decoration: underline; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
+  img { max-width: 100% !important; page-break-inside: avoid; }
+  h1, h2, h3 { page-break-after: avoid; }
+  p, blockquote { orphans: 3; widows: 3; }
+  [data-print="header"] { display: block !important; border-bottom: 1px solid black; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+}

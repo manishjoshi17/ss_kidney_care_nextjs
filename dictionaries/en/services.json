@@ -1,0 +1,26 @@
+{
+  "index": {
+    "eyebrow": "Treatments",
+    "title": "Find your care plan",
+    "lead": "Pick the area that's relevant to you — or talk to a nephrologist and we'll guide.",
+    "filter_by_condition": "By condition",
+    "filter_by_treatment": "By treatment"
+  },
+  "detail": {
+    "overview_eyebrow": "What to expect",
+    "overview_label": "Overview",
+    "journey_eyebrow": "How it works",
+    "journey_label": "Your journey with us",
+    "journey_steps": {
+      "consult": "Consult",
+      "investigate": "Investigate",
+      "treat": "Treat",
+      "follow_up": "Follow-up"
+    },
+    "faqs_label": "Common questions",
+    "quick_facts_label": "Quick facts",
+    "cashless_with": "Cashless treatment with",
+    "talk_to_us_label": "Have a question?",
+    "talk_to_us_body": "A coordinator will pick up. Real person, no menus."
+  }
+}

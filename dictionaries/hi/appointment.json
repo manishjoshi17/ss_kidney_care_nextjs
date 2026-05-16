@@ -1,0 +1,26 @@
+{
+  "eyebrow": "Appointment",
+  "title": "Schedule the visit",
+  "lead": "Tell us what's going on and a comfortable time to call. We'll get back within 24 hours.",
+  "form": {
+    "name_label": "Your name",
+    "name_placeholder": "How should we address you?",
+    "email_label": "Email",
+    "email_placeholder": "We'll send a confirmation here",
+    "phone_label": "Phone",
+    "phone_placeholder": "+91 12345 67890",
+    "preferred_doctor_label": "Preferred doctor (optional)",
+    "preferred_doctor_placeholder": "If you'd like a specific consultant",
+    "preferred_time_label": "Comfortable time to call",
+    "preferred_time_placeholder": "Mornings / afternoons / a specific window",
+    "message_label": "Anything we should know",
+    "message_placeholder": "Existing reports, ongoing treatment, what's worrying you — whatever helps us prepare.",
+    "submit": "Schedule the visit",
+    "submitting": "Sending"
+  },
+  "success": {
+    "title": "Thanks, {name}.",
+    "body": "We'll call you within 24 hours. A confirmation is on its way to {email}.",
+    "next_action": "Back to home"
+  }
+}

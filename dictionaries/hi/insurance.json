@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Insurance & TPA",
+  "title": "Check if we're empanelled",
+  "lead": "We work with most major insurers and TPAs. If yours isn't listed, talk to billing and we'll see what can be done.",
+  "insurers_title": "Insurers we work with",
+  "tpa_title": "TPAs we coordinate with",
+  "cashless_strip": {
+    "title": "How cashless treatment works here",
+    "steps": [
+      "Carry your insurance card and a photo ID on the visit.",
+      "Our billing team will raise the pre-authorisation request the same day.",
+      "Once approved, you focus on treatment — we handle the paperwork."
+    ]
+  },
+  "contact_billing": "Talk to billing"
+}

@@ -1,0 +1,15 @@
+{
+  "eyebrow": "Emergency",
+  "title": "We're here, 24×7.",
+  "lead": "Call our line. A nephrology nurse will answer.",
+  "call_now": "Call now",
+  "ambulance_title": "Need an ambulance?",
+  "ambulance_body": "Call the emergency line. Our team will dispatch the nearest ambulance and stay on the phone with you.",
+  "before_help_title": "Before help arrives",
+  "before_help": [
+    "Keep the patient calm and seated or lying down.",
+    "Note the time of any symptom — when it started, what it felt like.",
+    "Have current medications and recent reports nearby.",
+    "Unlock the main door so paramedics can enter quickly."
+  ]
+}

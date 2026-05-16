@@ -1,0 +1,32 @@
+{
+  "privacy": {
+    "eyebrow": "Privacy",
+    "title": "Privacy policy",
+    "last_updated_label": "Last updated",
+    "last_updated": "16 May 2026",
+    "sections": [
+      { "heading": "What we collect", "body": "Information you provide via our forms — name, email, phone, and the message you send. We do not collect medical history unless you choose to share it with us." },
+      { "heading": "How we use it", "body": "To respond to your enquiry. We do not sell or share your information with third parties for marketing." },
+      { "heading": "Storage", "body": "Form submissions arrive in our team email inbox. They are retained for as long as needed to follow up with you, and deleted on request." },
+      { "heading": "Your rights", "body": "Email us at the address in our footer to request a copy of, or deletion of, any information you have shared." },
+      { "heading": "Contact", "body": "For any privacy question, write to us at the email in the site footer." }
+    ]
+  },
+  "terms": {
+    "eyebrow": "Terms",
+    "title": "Terms of use",
+    "last_updated_label": "Last updated",
+    "last_updated": "16 May 2026",
+    "sections": [
+      { "heading": "About this site", "body": "This website is published by SS Kidney Care for general information about the hospital and the services we offer." },
+      { "heading": "No medical advice", "body": "Content here is informational. It does not replace consultation with a qualified clinician. Always confirm with a doctor before acting on anything you read." },
+      { "heading": "Accuracy", "body": "We try to keep everything accurate and up to date. Where information may be out of date, we mention it." },
+      { "heading": "External links", "body": "Where we link to other sites, we don't control their content or claims." }
+    ]
+  },
+  "disclaimer": {
+    "eyebrow": "Disclaimer",
+    "title": "Medical disclaimer",
+    "body": "The information on this website is provided for general awareness about kidney health and the services we offer. It is not a substitute for medical advice from a qualified clinician. Treatment plans depend on individual factors only your nephrologist can assess. If you believe you are experiencing a medical emergency, please call our 24×7 line or your local emergency number immediately."
+  }
+}

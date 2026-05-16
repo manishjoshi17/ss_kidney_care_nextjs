@@ -1,0 +1,28 @@
+{
+  "newsletter": {
+    "title": "Kidney health, in your inbox",
+    "body": "One short note a month. Practical things — diet, when to call us, how to read a test report.",
+    "email_placeholder": "you@example.com",
+    "submit": "Subscribe"
+  },
+  "columns": {
+    "brand": {
+      "tagline": "Advanced nephrology. The future of kidney health."
+    },
+    "services": "Treatments",
+    "for_patients": "For patients",
+    "hospital": "Hospital",
+    "get_in_touch": "Get in touch"
+  },
+  "get_in_touch": {
+    "address_label": "Address",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "hours_label": "Hours",
+    "emergency_label": "24×7 emergency"
+  },
+  "bottom_strip": {
+    "copyright": "© {year} SS Kidney Care, Sambalpur. All rights reserved."
+  },
+  "brand_phrase": "Care that listens."
+}

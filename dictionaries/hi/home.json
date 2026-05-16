@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "eyebrow": "Specialist nephrology · Sambalpur",
+    "title": "Advanced kidney care, close to home.",
+    "brand_phrase": "Advanced nephrology. The future of kidney health.",
+    "subhead": "Dialysis, CKD management, AKI care and preventive screening — under one roof in Sambalpur, with consultants who know your name and your reports."
+  },
+  "stats": {
+    "title": "By the numbers",
+    "items": {
+      "years": { "label": "founded in 2023, growing every year", "suffix": "" },
+      "patients": { "label": "patients seen since opening", "suffix": "+" },
+      "doctors": { "label": "consultant nephrologists", "suffix": "" },
+      "dialysis": { "label": "dialysis sessions a month", "suffix": "+" }
+    }
+  },
+  "services_strip": {
+    "eyebrow": "Treatments",
+    "title": "What we treat",
+    "subhead": "From a first reading of your reports to long-term care, we walk with you."
+  },
+  "doctors_strip": {
+    "eyebrow": "Our consultants",
+    "title": "The team behind your care",
+    "subhead": "Nephrologists you can talk to, and a 24×7 dialysis-trained nursing team."
+  },
+  "facilities_strip": {
+    "eyebrow": "Inside the hospital",
+    "title": "Built for kidney care, end to end.",
+    "subhead": "Six modern hemodialysis stations, a renal ICU, an in-house lab, and a 24×7 ambulance."
+  },
+  "testimonials_strip": {
+    "eyebrow": "Patient stories",
+    "title": "What families tell us"
+  },
+  "insurance_strip": {
+    "eyebrow": "Cashless care",
+    "title": "Empanelled with leading insurers",
+    "subhead": "Cashless treatment with most major insurers and TPAs."
+  },
+  "cta_band": {
+    "title": "A second opinion is always welcome.",
+    "subhead": "Send us your reports or book a consultation — we'll get back within 24 hours.",
+    "phrase": "Advanced nephrology. The future of kidney health."
+  },
+  "faq": {
+    "eyebrow": "Common questions",
+    "title": "What people often ask"
+  }
+}

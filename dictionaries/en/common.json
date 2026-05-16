@@ -1,0 +1,34 @@
+{
+  "skip_to_content": "Skip to main content",
+  "language_switcher": {
+    "label": "Choose language",
+    "en": "English",
+    "hi": "Hindi",
+    "or": "Odia"
+  },
+  "actions": {
+    "talk_to_nephrologist": "Talk to a nephrologist",
+    "schedule_consultation": "Schedule a consultation",
+    "find_care_plan": "Find your care plan",
+    "book_with_doctor": "Book with Dr. {name}",
+    "read_guide": "Read the guide",
+    "check_empanelment": "Check if we're empanelled",
+    "call_24x7": "Call our 24×7 line",
+    "chat_whatsapp": "Chat on WhatsApp",
+    "view_all": "View all",
+    "back_to_home": "Back to home",
+    "try_again": "Try again"
+  },
+  "labels": {
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "search": "Search",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Hours",
+    "emergency": "Emergency",
+    "loading": "Loading"
+  },
+  "scroll_cue": "Scroll to read more"
+}

@@ -1,0 +1,42 @@
+{
+  "primary": {
+    "home": "ମୁଖ୍ୟ ପୃଷ୍ଠା",
+    "about": "ଆମ ବିଷୟରେ",
+    "services": "ସେବାଗୁଡ଼ିକ",
+    "doctors": "ଡାକ୍ତରମାନେ",
+    "facilities": "ସୁବିଧାଗୁଡ଼ିକ",
+    "resources": "ରୋଗୀ ସମ୍ବଳ",
+    "contact": "ଯୋଗାଯୋଗ"
+  },
+  "mega_menu": {
+    "services": {
+      "by_condition_label": "ରୋଗ ଅନୁସାରେ",
+      "by_treatment_label": "ଚିକିତ୍ସା ଅନୁସାରେ",
+      "featured_label": "ବିଶେଷ"
+    }
+  },
+  "mobile_groups": {
+    "main": "ମୁଖ୍ୟ",
+    "for_patients": "ରୋଗୀଙ୍କ ପାଇଁ",
+    "hospital": "ଡାକ୍ତରଖାନା",
+    "legal": "ଆଇନଗତ"
+  },
+  "secondary": {
+    "appointment": "ଅପଏଣ୍ଟମେଣ୍ଟ",
+    "emergency": "ଜରୁରୀକାଳୀନ",
+    "insurance": "ବୀମା ଓ TPA",
+    "international": "ଆନ୍ତର୍ଜାତିକ ରୋଗୀ",
+    "gallery": "ଗ୍ୟାଲେରୀ",
+    "testimonials": "ରୋଗୀଙ୍କ କାହାଣୀ",
+    "careers": "କ୍ୟାରିଅର୍"
+  },
+  "legal": {
+    "privacy": "ଗୋପନୀୟତା ନୀତି",
+    "terms": "ବ୍ୟବହାର ସର୍ତ୍ତାବଳୀ",
+    "disclaimer": "ଚିକିତ୍ସା ସମ୍ବନ୍ଧୀୟ ସୂଚନା"
+  },
+  "emergency_strip": {
+    "label": "24×7 ଜରୁରୀକାଳୀନ",
+    "call_text": "ଏବେ କଲ୍ କରନ୍ତୁ"
+  }
+}

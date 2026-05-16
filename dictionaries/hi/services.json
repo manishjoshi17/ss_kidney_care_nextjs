@@ -1,0 +1,26 @@
+{
+  "index": {
+    "eyebrow": "उपचार",
+    "title": "अपनी देखभाल योजना खोजें",
+    "lead": "जो आपके लिए ज़रूरी है उसे चुनें — या नेफ्रोलॉजिस्ट से बात करें, हम मार्गदर्शन करेंगे।",
+    "filter_by_condition": "स्थिति के अनुसार",
+    "filter_by_treatment": "उपचार के अनुसार"
+  },
+  "detail": {
+    "overview_eyebrow": "क्या उम्मीद करें",
+    "overview_label": "अवलोकन",
+    "journey_eyebrow": "यह कैसे होता है",
+    "journey_label": "हमारे साथ आपकी यात्रा",
+    "journey_steps": {
+      "consult": "परामर्श",
+      "investigate": "जाँच",
+      "treat": "उपचार",
+      "follow_up": "फ़ॉलो-अप"
+    },
+    "faqs_label": "आम सवाल",
+    "quick_facts_label": "ज़रूरी बातें",
+    "cashless_with": "कैशलेस उपचार",
+    "talk_to_us_label": "कोई सवाल है?",
+    "talk_to_us_body": "एक समन्वयक उत्तर देगा। असली व्यक्ति, कोई मेनू नहीं।"
+  }
+}

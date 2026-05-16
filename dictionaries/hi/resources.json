@@ -1,0 +1,12 @@
+{
+  "index": {
+    "eyebrow": "Patient resources",
+    "title": "Guides written in plain words",
+    "lead": "Diet, what to expect at your first visit, dialysis basics, insurance pre-auth — clear and practical."
+  },
+  "detail": {
+    "reading_time": "{minutes} min read",
+    "in_this_guide": "In this guide",
+    "next_read": "What to read next"
+  }
+}

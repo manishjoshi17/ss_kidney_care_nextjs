@@ -1,0 +1,16 @@
+{
+  "eyebrow": "About us",
+  "title": "A focused nephrology hospital, built around the patients we serve.",
+  "lead": "SS Kidney Care opened its doors in Sambalpur in 2023 with a simple idea — that advanced kidney care should be specialist-led, locally available, and honestly explained. We've been growing carefully since.",
+  "mission_title": "Our mission",
+  "mission_body": "To give every kidney patient in western Odisha and the surrounding region the same standard of nephrology care a family member would expect — close to home, in their own language, without the long-distance referrals that once defined kidney care here.",
+  "values_title": "What we stand for",
+  "values": [
+    { "name": "Listening first", "body": "Every consult starts with your story, not a clipboard." },
+    { "name": "Plain words", "body": "We translate test results and treatment options into language you can act on." },
+    { "name": "Conservative care", "body": "If you don't need a procedure, we'll tell you. If you do, we'll explain it." },
+    { "name": "Always available", "body": "Our 24×7 line is staffed by a dialysis-trained nurse, not a call centre." },
+    { "name": "Continuous learning", "body": "We follow the evidence and audit our outcomes — and we tell you what we've learned." }
+  ],
+  "accreditations_title": "Recognition & affiliations"
+}

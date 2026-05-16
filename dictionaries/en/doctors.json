@@ -1,0 +1,25 @@
+{
+  "index": {
+    "eyebrow": "Our consultants",
+    "title": "Meet the team",
+    "lead": "Senior nephrologists and transplant surgeons. Many of them speak multiple languages."
+  },
+  "detail": {
+    "at_a_glance": "At a glance",
+    "experience": "Years of experience",
+    "specialties": "Areas of focus",
+    "languages": "Languages spoken",
+    "availability": "Available on",
+    "patient_stories": "Patient stories",
+    "see_other": "See other consultants",
+    "day_names": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    }
+  }
+}

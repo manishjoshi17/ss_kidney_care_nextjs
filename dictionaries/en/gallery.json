@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Gallery",
+  "title": "A look inside",
+  "lead": "Photos from the hospital, the team, and events.",
+  "categories": {
+    "facility": "Facility",
+    "staff": "Team",
+    "events": "Events",
+    "equipment": "Equipment"
+  },
+  "lightbox": {
+    "close": "Close",
+    "previous": "Previous photo",
+    "next": "Next photo"
+  }
+}

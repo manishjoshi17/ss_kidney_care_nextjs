@@ -1,0 +1,32 @@
+{
+  "eyebrow": "Contact",
+  "title": "Talk to us",
+  "lead": "Address, phone, hours — and a quick form for any enquiry.",
+  "form": {
+    "name_label": "Your name",
+    "name_placeholder": "How should we address you?",
+    "email_label": "Email",
+    "email_placeholder": "We'll reply here",
+    "phone_label": "Phone",
+    "phone_placeholder": "+91 12345 67890",
+    "reason_label": "How can we help?",
+    "reason_options": {
+      "appointment": "I'd like to book an appointment",
+      "second_opinion": "I'd like a second opinion",
+      "general": "General enquiry",
+      "feedback": "Feedback"
+    },
+    "message_label": "Your message",
+    "message_placeholder": "Tell us a little so we can route this to the right person.",
+    "submit": "Send the message",
+    "submitting": "Sending"
+  },
+  "success": {
+    "title": "Thanks, {name}.",
+    "body": "We'll get back within 24 hours. A copy has been sent to {email}.",
+    "next_action": "Back to home"
+  },
+  "find_us_title": "Find us",
+  "hours_title": "Hours",
+  "emergency_callout": "For emergencies, call our 24×7 line."
+}

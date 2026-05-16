@@ -1,0 +1,23 @@
+{
+  "form": {
+    "name_required": "We'll need a name so we know how to greet you.",
+    "email_invalid": "That doesn't look like an email — could you double-check?",
+    "phone_required": "We'll need a phone number to call you on.",
+    "phone_invalid": "Please check the phone number — it should include the country code.",
+    "message_too_short": "Please add a bit more so we can help — even a sentence or two is fine.",
+    "reason_required": "Pick a reason so we can route this to the right team.",
+    "unknown": "Something on our end went wrong. Could you try again, or call the hospital directly?"
+  },
+  "rate_limited": "We've received your messages — give us a moment to read them.",
+  "network": "The form couldn't go through. Check your connection and try again.",
+  "page": {
+    "title_404": "Looks like that page wandered off.",
+    "title_500": "Our servers had a hiccup.",
+    "body_404": "We couldn't find what you were looking for. Try the search, or pick a starting point.",
+    "body_500": "Try again in a moment. If it's urgent, please call our 24×7 emergency line."
+  },
+  "empty": {
+    "no_results": "Nothing matches that. Try clearing filters.",
+    "coming_soon": "Coming soon. Check back, or get in touch in the meantime."
+  }
+}

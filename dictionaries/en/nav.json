@@ -1,0 +1,42 @@
+{
+  "primary": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "doctors": "Doctors",
+    "facilities": "Facilities",
+    "resources": "Patient resources",
+    "contact": "Contact"
+  },
+  "mega_menu": {
+    "services": {
+      "by_condition_label": "By condition",
+      "by_treatment_label": "By treatment",
+      "featured_label": "Featured"
+    }
+  },
+  "mobile_groups": {
+    "main": "Main",
+    "for_patients": "For patients",
+    "hospital": "Hospital",
+    "legal": "Legal"
+  },
+  "secondary": {
+    "appointment": "Appointment",
+    "emergency": "Emergency",
+    "insurance": "Insurance & TPA",
+    "international": "International patients",
+    "gallery": "Gallery",
+    "testimonials": "Patient stories",
+    "careers": "Careers"
+  },
+  "legal": {
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "disclaimer": "Medical disclaimer"
+  },
+  "emergency_strip": {
+    "label": "24×7 Emergency",
+    "call_text": "Call now"
+  }
+}

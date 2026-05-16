@@ -1,0 +1,76 @@
+{
+  "home": {
+    "title": "SS Kidney Care — Advanced nephrology in Sambalpur",
+    "description": "Specialist kidney care in Sambalpur, Odisha. Dialysis, CKD management, AKI treatment, preventive screening and advanced therapies — all in one place."
+  },
+  "about": {
+    "title": "About — SS Kidney Care",
+    "description": "Founded in 2023, SS Kidney Care brings advanced nephrology to western Odisha. Our story, the team, and the standards we hold ourselves to."
+  },
+  "services": {
+    "index": {
+      "title": "Treatments — SS Kidney Care",
+      "description": "Hemodialysis, peritoneal dialysis, CKD management, AKI treatment, hypertension and diabetes-related kidney care, preventive screening and plasmapheresis."
+    }
+  },
+  "doctors": {
+    "index": {
+      "title": "Our consultants — SS Kidney Care",
+      "description": "Meet our consultant nephrologists. Areas of focus, languages spoken, days available."
+    }
+  },
+  "facilities": {
+    "title": "Facilities — SS Kidney Care",
+    "description": "Six-machine dialysis floor, renal ICU, in-house biochemistry lab, and a 24×7 ambulance service in Sambalpur."
+  },
+  "gallery": {
+    "title": "Gallery — SS Kidney Care",
+    "description": "Photos of the hospital, our team, and patient events."
+  },
+  "testimonials": {
+    "title": "Patient stories — SS Kidney Care",
+    "description": "Stories from the families we've cared for."
+  },
+  "resources": {
+    "index": {
+      "title": "Patient resources — SS Kidney Care",
+      "description": "Plain-language guides on dialysis, CKD, kidney-friendly diet, and what to expect at each step."
+    }
+  },
+  "insurance": {
+    "title": "Insurance & TPA — SS Kidney Care",
+    "description": "The insurance and TPA partners we work with, and how cashless treatment works at the hospital."
+  },
+  "international_patients": {
+    "title": "International patients — SS Kidney Care",
+    "description": "Coming from outside India? Visa support, transport, lodging and care coordination — handled by our team."
+  },
+  "appointment": {
+    "title": "Schedule the visit — SS Kidney Care",
+    "description": "Tell us what's going on and a comfortable time to call. We'll get back within 24 hours."
+  },
+  "contact": {
+    "title": "Contact us — SS Kidney Care",
+    "description": "Address, hours, phone, and a quick form for any enquiry. SS Kidney Care, Sambalpur."
+  },
+  "emergency": {
+    "title": "Emergency — SS Kidney Care",
+    "description": "Our 24×7 line, ambulance request, and what to do before help arrives."
+  },
+  "careers": {
+    "title": "Careers — SS Kidney Care",
+    "description": "Open roles, what we look for, and how to apply."
+  },
+  "privacy": {
+    "title": "Privacy policy — SS Kidney Care",
+    "description": "How we collect, use, and protect your information."
+  },
+  "terms": {
+    "title": "Terms of use — SS Kidney Care",
+    "description": "The terms that apply when you use this website."
+  },
+  "disclaimer": {
+    "title": "Medical disclaimer — SS Kidney Care",
+    "description": "Important information about the medical content on this site."
+  }
+}

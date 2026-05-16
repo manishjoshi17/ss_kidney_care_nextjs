@@ -1,0 +1,28 @@
+{
+  "newsletter": {
+    "title": "କିଡନୀ ସ୍ୱାସ୍ଥ୍ୟ, ଆପଣଙ୍କ ଇନ୍‌ବକ୍ସରେ",
+    "body": "ମାସରେ ଗୋଟିଏ ଛୋଟ ନୋଟ୍। ବ୍ୟବହାରିକ ବିଷୟ — ଖାଦ୍ୟ, କେତେବେଳେ ଆମକୁ କଲ୍ କରିବେ, ଗୋଟିଏ ପରୀକ୍ଷା ରିପୋର୍ଟ କେମିତି ପଢ଼ିବେ।",
+    "email_placeholder": "you@example.com",
+    "submit": "ସବ୍‌ସ୍କ୍ରାଇବ୍ କରନ୍ତୁ"
+  },
+  "columns": {
+    "brand": {
+      "tagline": "ଉନ୍ନତ ନେଫ୍ରୋଲୋଜି। କିଡନୀ ସ୍ୱାସ୍ଥ୍ୟର ଭବିଷ୍ୟତ।"
+    },
+    "services": "ଚିକିତ୍ସା",
+    "for_patients": "ରୋଗୀଙ୍କ ପାଇଁ",
+    "hospital": "ଡାକ୍ତରଖାନା",
+    "get_in_touch": "ଯୋଗାଯୋଗ କରନ୍ତୁ"
+  },
+  "get_in_touch": {
+    "address_label": "ଠିକଣା",
+    "phone_label": "ଫୋନ୍",
+    "email_label": "ଇମେଲ୍",
+    "hours_label": "ସମୟ",
+    "emergency_label": "24×7 ଜରୁରୀକାଳୀନ"
+  },
+  "bottom_strip": {
+    "copyright": "© {year} SS Kidney Care, ସମ୍ବଲପୁର। ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ।"
+  },
+  "brand_phrase": "ଯେଉଁ ଯତ୍ନ ଶୁଣେ।"
+}
