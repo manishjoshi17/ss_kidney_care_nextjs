@@ -15,7 +15,7 @@ export function StatsStrip({ home }: StatsStripProps) {
   const items = [
     { key: "years", value: 16 },
     { key: "patients", value: 12000 },
-    { key: "doctors", value: 8 },
+    { key: "dialysis_machines", value: 6 },
     { key: "dialysis", value: 3500 },
   ] as const;
 

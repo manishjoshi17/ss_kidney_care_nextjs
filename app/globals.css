@@ -419,7 +419,7 @@
   .text-display {
     font-family: var(--font-display), serif;
     font-size: var(--text-display);
-    line-height: calc(0.95 * var(--leading-multiplier));
+    line-height: calc(1.08 * var(--leading-multiplier));
     letter-spacing: -0.035em;
     font-weight: 400;
     text-wrap: balance;
@@ -447,7 +447,7 @@
   .text-h3 {
     font-family: var(--font-sans), sans-serif;
     font-size: var(--text-h3);
-    line-height: calc(1.20 * var(--leading-multiplier));
+    line-height: calc(1.32 * var(--leading-multiplier));
     letter-spacing: -0.010em;
     font-weight: 600;
   }

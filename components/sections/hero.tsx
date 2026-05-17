@@ -17,7 +17,7 @@ import { StarRating } from "@/components/sections/star-rating";
 
 import { drSouravShristi } from "@/content/doctors/dr-sourav-shristi";
 import { site } from "@/content/site";
-import { TESTIMONIALS_AGGREGATE } from "@/content/testimonials";
+import { ADDITIONAL_REVIEW_SOURCES, TESTIMONIALS_AGGREGATE } from "@/content/testimonials";
 import { type Dictionary } from "@/lib/i18n";
 import { type SupportedLocale, urlForLocale } from "@/lib/locale";
 import { telHref, waHref } from "@/lib/utils";
@@ -50,6 +50,30 @@ export function Hero({ locale, home, common }: HeroProps) {
       <Container className="relative py-section">
         <Sequence className="grid items-center gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
+            {/* Mobile-only doctor anchor pill — gives the eye an immediate visual before the text-heavy block */}
+            <SequenceStep>
+              <div className="lg:hidden mb-6 flex items-center gap-3">
+                <div className="relative size-12 shrink-0 rounded-full overflow-hidden border border-primary/20 bg-primary-soft">
+                  {drSouravShristi.photo && (
+                    <OptimizedImage
+                      src={drSouravShristi.photo}
+                      alt=""
+                      fill
+                      sizes="48px"
+                      className="object-cover object-top"
+                    />
+                  )}
+                </div>
+                <div className="flex flex-col leading-tight min-w-0">
+                  <span className="text-small font-semibold text-foreground truncate">
+                    {drSouravShristi.i18n[locale].name}
+                  </span>
+                  <span className="text-tiny text-foreground-muted truncate">
+                    {common.doctor_chips.dm} · {common.doctor_chips.vimsar}
+                  </span>
+                </div>
+              </div>
+            </SequenceStep>
             <SequenceStep>
               <Eyebrow index="01">{home.hero.eyebrow}</Eyebrow>
             </SequenceStep>
@@ -95,24 +119,32 @@ export function Hero({ locale, home, common }: HeroProps) {
               </div>
             </SequenceStep>
             <SequenceStep delay={0.9}>
-              <a
-                href={TESTIMONIALS_AGGREGATE.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-flex flex-wrap items-center gap-x-2 gap-y-2 max-w-full text-small text-foreground-muted hover:text-foreground leading-none"
-              >
-                <StarRating value={TESTIMONIALS_AGGREGATE.rating} size={16} />
-                <span className="font-semibold text-foreground">{TESTIMONIALS_AGGREGATE.rating}</span>
-                <span>on</span>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={TESTIMONIALS_AGGREGATE.logoSrc}
-                  alt={TESTIMONIALS_AGGREGATE.source}
-                  className="block h-5 w-auto shrink-0"
-                />
-                <span>· {TESTIMONIALS_AGGREGATE.count}+ reviews</span>
-                <Icon name="arrow-up-right" size={14} />
-              </a>
+              <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-3 text-small text-foreground-muted leading-none">
+                <div className="inline-flex items-center gap-1.5">
+                  <StarRating value={TESTIMONIALS_AGGREGATE.rating} size={16} />
+                  <span className="font-semibold text-foreground">{TESTIMONIALS_AGGREGATE.rating}</span>
+                </div>
+                {[TESTIMONIALS_AGGREGATE, ...ADDITIONAL_REVIEW_SOURCES].map((src) => (
+                  <a
+                    key={src.source}
+                    href={src.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 hover:text-foreground"
+                  >
+                    {src.logoSrc && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={src.logoSrc}
+                        alt={src.source}
+                        className="block h-5 w-auto shrink-0"
+                      />
+                    )}
+                    {typeof src.count === "number" && <span>{src.count}+</span>}
+                    <Icon name="arrow-up-right" size={12} />
+                  </a>
+                ))}
+              </div>
             </SequenceStep>
           </div>
 

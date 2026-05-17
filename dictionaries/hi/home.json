@@ -14,7 +14,7 @@
     "items": {
       "years": { "label": "2023 में स्थापित, हर साल बढ़ रहे हैं", "suffix": "" },
       "patients": { "label": "खुलने से अब तक देखे गए मरीज़", "suffix": "+" },
-      "doctors": { "label": "विशेषज्ञ नेफ्रोलॉजिस्ट", "suffix": "" },
+      "dialysis_machines": { "label": "आधुनिक हेमोडायलिसिस स्टेशन, कोई वेटिंग नहीं", "suffix": "" },
       "dialysis": { "label": "हर महीने डायलिसिस सत्र", "suffix": "+" }
     }
   },

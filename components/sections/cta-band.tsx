@@ -34,7 +34,7 @@ export function CtaBand({ locale, home, common }: CtaBandProps) {
           <div className="relative px-6 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20 grid items-end gap-10 lg:grid-cols-[1.5fr_1fr]">
             <Reveal>
               <p className="text-eyebrow text-on-forest/65">{home.cta_band.phrase}</p>
-              <Heading as={2} variant="h1" className="text-on-forest mt-3 max-w-[18ch]">{home.cta_band.title}</Heading>
+              <Heading as={2} variant="h1" className="text-on-forest mt-3">{home.cta_band.title}</Heading>
               <p className="text-lead text-on-forest/85 mt-4 max-w-[50ch]">{home.cta_band.subhead}</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Magnetic>

@@ -14,7 +14,7 @@
     "items": {
       "years": { "label": "founded in 2023, growing every year", "suffix": "" },
       "patients": { "label": "patients seen since opening", "suffix": "+" },
-      "doctors": { "label": "consultant nephrologist", "suffix": "" },
+      "dialysis_machines": { "label": "modern hemodialysis stations, no waiting list", "suffix": "" },
       "dialysis": { "label": "dialysis sessions a month", "suffix": "+" }
     }
   },
