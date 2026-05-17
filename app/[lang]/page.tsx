@@ -12,7 +12,6 @@ import { FaqAccordion } from "@/components/sections/faq-accordion";
 import { getDictionary } from "@/lib/i18n";
 import { asSupportedLocale } from "@/lib/locale";
 import { baseMetadata } from "@/lib/seo";
-import { getAllServices } from "@/modules/services";
 
 interface PageProps {
   params: Promise<{ lang: string }>;
@@ -35,10 +34,6 @@ export default async function HomePage({ params }: PageProps) {
   const lang = asSupportedLocale(rawLang);
   const dict = getDictionary(lang);
 
-  // Build FAQ from the first service for the home page accordion.
-  const firstService = getAllServices()[0];
-  const faqItems = firstService?.i18n[lang].faqs ?? [];
-
   return (
     <>
       <Hero locale={lang} home={dict.home} common={dict.common} />
@@ -52,7 +47,9 @@ export default async function HomePage({ params }: PageProps) {
         eyebrow={dict.home.faq.eyebrow}
         index="06"
         title={dict.home.faq.title}
-        items={faqItems}
+        lead={dict.home.faq.lead}
+        items={dict.home.faq.items}
+        callout={dict.home.faq.callout}
       />
     </>
   );
