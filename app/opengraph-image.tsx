@@ -54,24 +54,47 @@ export default async function OG() {
               opacity: 0.75,
             }}
           >
-            Specialist nephrology · Sambalpur
+            Specialist nephrology · Sambalpur · since 2023
           </p>
           <h1
             style={{
-              fontSize: 84,
+              fontSize: 76,
               lineHeight: 1.02,
               margin: 0,
               fontWeight: 500,
               letterSpacing: "-0.025em",
-              maxWidth: 980,
+              maxWidth: 1000,
               color: "#0E3A5C",
             }}
           >
-            Advanced nephrology. The future of kidney health.
+            Dr. Sourav Shristi
           </h1>
+          <p
+            style={{
+              fontSize: 30,
+              color: "#0E3A5C",
+              margin: 0,
+              fontWeight: 500,
+              opacity: 0.85,
+              maxWidth: 1000,
+            }}
+          >
+            Consultant Nephrologist, Transplant Physician & Interventional Nephrologist
+          </p>
+          <p
+            style={{
+              fontSize: 24,
+              color: "#0E3A5C",
+              margin: 0,
+              opacity: 0.7,
+              fontStyle: "italic",
+            }}
+          >
+            DM Nephrology · Asst. Professor, VIMSAR Burla · ★ 4.9 on JustDial
+          </p>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span style={{ fontSize: 22, color: "#0E3A5C" }}>{site.email.general}</span>
+          <span style={{ fontSize: 22, color: "#0E3A5C" }}>SS Kidney Care · Sambalpur</span>
           <span style={{ fontSize: 22, color: "#0E3A5C", fontWeight: 600 }}>{site.phoneNumbers.general}</span>
         </div>
       </div>

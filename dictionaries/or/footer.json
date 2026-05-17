@@ -7,11 +7,11 @@
   },
   "columns": {
     "brand": {
-      "tagline": "ଉନ୍ନତ ନେଫ୍ରୋଲୋଜି। କିଡନୀ ସ୍ୱାସ୍ଥ୍ୟର ଭବିଷ୍ୟତ।"
+      "tagline": "ଉନ୍ନତ ନେଫ୍ରୋଲୋଜି — କିଡନୀ ସ୍ୱାସ୍ଥ୍ୟର ଭବିଷ୍ୟତ।"
     },
     "services": "ଚିକିତ୍ସା",
     "for_patients": "ରୋଗୀଙ୍କ ପାଇଁ",
-    "hospital": "ଡାକ୍ତରଖାନା",
+    "hospital": "କ୍ଲିନିକ",
     "get_in_touch": "ଯୋଗାଯୋଗ କରନ୍ତୁ"
   },
   "get_in_touch": {
@@ -20,6 +20,11 @@
     "email_label": "ଇମେଲ୍",
     "hours_label": "ସମୟ",
     "emergency_label": "24×7 ଜରୁରୀକାଳୀନ"
+  },
+  "burla": {
+    "label": "ଏଠାରେ ମଧ୍ୟ",
+    "title": "ବୁର୍ଲା — VIMSAR ପରାମର୍ଶ ସ୍ଥାନ",
+    "disclaimer_short": "ବୁର୍ଲା ତାଲିକା ଡ. ଶ୍ରୀଷ୍ଟିଙ୍କ VIMSAR ପରାମର୍ଶ ଘଣ୍ଟାକୁ ପ୍ରତିଫଳିତ କରେ ଏବଂ ଏହା SS Kidney Care ର ଶାଖା ନୁହେଁ।"
   },
   "bottom_strip": {
     "copyright": "© {year} SS Kidney Care, ସମ୍ବଲପୁର। ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ।"

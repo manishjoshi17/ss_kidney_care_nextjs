@@ -114,6 +114,11 @@
   --warning-foreground:   oklch(0.20 0.040 80);
   --destructive:          oklch(0.60 0.20 25);
   --destructive-foreground: oklch(0.98 0.012 25);
+  /* Solid pale destructive — used on the sticky emergency strip so scrolling content
+     does not show through. Pre-blended `oklch(--destructive) 10% over --background`. */
+  --destructive-soft:     oklch(0.965 0.022 25);
+  --destructive-soft-strong: oklch(0.94 0.040 25);
+  --destructive-deep:     oklch(0.42 0.16 25);
 
   /* ===================================================================
    * Stat-cycling accents
@@ -306,6 +311,9 @@
   --color-warning-foreground:  var(--warning-foreground);
   --color-destructive:         var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-soft:    var(--destructive-soft);
+  --color-destructive-soft-strong: var(--destructive-soft-strong);
+  --color-destructive-deep:    var(--destructive-deep);
 
   --color-stat-sky:            var(--stat-sky);
   --color-stat-amber:          var(--stat-amber);
@@ -540,6 +548,31 @@
   /* Photo color grade — applied as a token, not a one-off filter */
   .photo-graded {
     filter: saturate(1.04) contrast(1.03) brightness(1.01) sepia(0.04);
+  }
+
+  /* Bean-curve / checkmark path-draw — CSS-only, no framer dependency.
+     Uses pathLength="1" on the SVG path so the dash math doesn't need
+     real path-length measurement. */
+  @keyframes ss-draw-path {
+    to { stroke-dashoffset: 0; }
+  }
+  .ss-path-draw {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: ss-draw-path var(--duration-slow) var(--ease-out-soft) forwards;
+  }
+  .ss-path-draw-delayed {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: ss-draw-path var(--duration-base) var(--ease-spring-gentle) forwards;
+    animation-delay: var(--duration-slow);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ss-path-draw,
+    .ss-path-draw-delayed {
+      stroke-dashoffset: 0;
+      animation: none;
+    }
   }
 
   /* Section spacing scale — padding + margin variants share the same tokens */

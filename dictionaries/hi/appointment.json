@@ -1,7 +1,15 @@
 {
   "eyebrow": "Appointment",
-  "title": "Schedule the visit",
-  "lead": "Tell us what's going on and a comfortable time to call. We'll get back within 24 hours.",
+  "title": "Book a consultation with Dr. Shristi",
+  "lead": "Fastest path: WhatsApp Dr. Shristi with a photo of your reports. The form below works too — we'll call you back within 24 hours.",
+  "whatsapp_block": {
+    "title": "WhatsApp Dr. Shristi",
+    "body": "Send a photo of your reports and a short note about what's going on. He writes back within 24 hours.",
+    "cta": "Open WhatsApp",
+    "prefill": "Hello, I'd like to book an appointment at SS Kidney Care. I'm sending my reports here."
+  },
+  "or_use_form": "Or fill the form below",
+  "opd_timings_note": "OPD: 8–10 AM and 6–9 PM (Sambalpur clinic). Saturday morning only.",
   "form": {
     "name_label": "Your name",
     "name_placeholder": "How should we address you?",
@@ -9,8 +17,8 @@
     "email_placeholder": "We'll send a confirmation here",
     "phone_label": "Phone",
     "phone_placeholder": "+91 12345 67890",
-    "preferred_doctor_label": "Preferred doctor (optional)",
-    "preferred_doctor_placeholder": "If you'd like a specific consultant",
+    "preferred_doctor_label": "Preferred slot (optional)",
+    "preferred_doctor_placeholder": "Morning OPD or evening OPD",
     "preferred_time_label": "Comfortable time to call",
     "preferred_time_placeholder": "Mornings / afternoons / a specific window",
     "message_label": "Anything we should know",

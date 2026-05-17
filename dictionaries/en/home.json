@@ -1,37 +1,56 @@
 {
   "hero": {
-    "eyebrow": "Specialist nephrology · Sambalpur",
-    "title": "Advanced kidney care, close to home.",
-    "brand_phrase": "Advanced nephrology. The future of kidney health.",
-    "subhead": "Dialysis, CKD management, AKI care and preventive screening — under one roof in Sambalpur, with consultants who know your name and your reports."
+    "eyebrow": "Specialist nephrology · Sambalpur · since 2023",
+    "title": "The kidney specialist your reports actually need.",
+    "kicker": "DM Nephrology · Asst. Professor, VIMSAR · ★ 4.9 on JustDial",
+    "lead": "Western Odisha's full-time research nephrology practice. Dr. Sourav Shristi treats the kidney problems most general physicians miss — diabetic kidney disease, environmental CKD, transplant workup, and the kind of explanation a worried family actually deserves.",
+    "primary_cta": "WhatsApp Dr. Shristi",
+    "secondary_cta": "Call clinic",
+    "transitional_cta": "Read patient stories",
+    "whatsapp_prefill": "Hello, I'd like to send my reports for a review."
   },
   "stats": {
     "title": "By the numbers",
     "items": {
       "years": { "label": "founded in 2023, growing every year", "suffix": "" },
       "patients": { "label": "patients seen since opening", "suffix": "+" },
-      "doctors": { "label": "consultant nephrologists", "suffix": "" },
+      "doctors": { "label": "consultant nephrologist", "suffix": "" },
       "dialysis": { "label": "dialysis sessions a month", "suffix": "+" }
     }
   },
   "services_strip": {
     "eyebrow": "Treatments",
     "title": "What we treat",
-    "subhead": "From a first reading of your reports to long-term care, we walk with you."
+    "subhead": "From a first reading of your reports to long-term care, Dr. Shristi walks with you."
   },
-  "doctors_strip": {
-    "eyebrow": "Our consultants",
-    "title": "The team behind your care",
-    "subhead": "Nephrologists you can talk to, and a 24×7 dialysis-trained nursing team."
+  "meet_dr_shristi": {
+    "eyebrow": "Meet your nephrologist",
+    "title": "Specialist nephrology, by someone who teaches it.",
+    "subhead": "DM Nephrology · Asst. Professor at VIMSAR Burla · Published researcher on regional CKD",
+    "anchor_cta": "Read patient stories"
+  },
+  "patient_stories": {
+    "eyebrow": "Patient stories",
+    "title": "What families tell us",
+    "aggregate_label": "{rating} on {source} · {count}+ ratings",
+    "aggregate_count_label": "from {count}+ ratings",
+    "aggregate_cta": "Read more reviews on {source}",
+    "all_stories_cta": "All patient stories"
+  },
+  "specialty_spotlight": {
+    "eyebrow": "Procedures",
+    "title": "Where the training really shows",
+    "subhead": "Kidney biopsy, catheter placement, transplant workup, critical-care nephrology — the procedures Dr. Shristi performs himself, not refers out."
   },
   "facilities_strip": {
-    "eyebrow": "Inside the hospital",
+    "eyebrow": "Inside the clinic",
     "title": "Built for kidney care, end to end.",
     "subhead": "Six modern hemodialysis stations, a renal ICU, an in-house lab, and a 24×7 ambulance."
   },
-  "testimonials_strip": {
-    "eyebrow": "Patient stories",
-    "title": "What families tell us"
+  "research_band": {
+    "eyebrow": "Research & Regional Insight",
+    "title": "Kidney problems in western Odisha don't look like kidney problems in a textbook.",
+    "subhead": "Dr. Shristi's published research is part of the reason we know that — and part of how the clinic decides what to look for."
   },
   "insurance_strip": {
     "eyebrow": "Cashless care",
@@ -40,8 +59,8 @@
   },
   "cta_band": {
     "title": "A second opinion is always welcome.",
-    "subhead": "Send us your reports or book a consultation — we'll get back within 24 hours.",
-    "phrase": "Advanced nephrology. The future of kidney health."
+    "subhead": "If two doctors gave you two different answers, send your reports — Dr. Shristi will write back within 24 hours with a third.",
+    "phrase": "Advanced nephrology — the future of kidney health."
   },
   "faq": {
     "eyebrow": "Common questions",
@@ -49,12 +68,16 @@
     "lead": "Short, honest answers to the questions families bring in most often. Don't see yours below? Send your reports or ring our line — we'll respond personally within 24 hours.",
     "callout": {
       "title": "Still got a question?",
-      "body": "Send us your reports or call our line — a consultant will get back to you within 24 hours.",
+      "body": "Send us your reports or call our line — Dr. Shristi will get back to you within 24 hours.",
       "phone_label": "Talk to our front desk",
       "whatsapp_label": "Or message on WhatsApp",
       "whatsapp_prefill": "Hello, I have a question for the SS Kidney Care team."
     },
     "items": [
+      {
+        "question": "Why see a nephrologist when my GP says 'wait and watch'?",
+        "answer": "Watching is fine — if someone is actually watching. GPs often see hundreds of patients a week and a slow rise in creatinine is easy to under-react to. A nephrologist watches the same number quarterly with a different lens; we catch the inflection point earlier, which is when interventions still work."
+      },
       {
         "question": "When should I see a nephrologist?",
         "answer": "If you have diabetes, high blood pressure, a family history of kidney disease, or repeated UTIs, a yearly kidney check is sensible — early damage rarely shows symptoms. If your reports already flag protein in urine or a rising creatinine, please come in sooner."
@@ -81,7 +104,7 @@
       },
       {
         "question": "Can I send my reports for a second opinion before coming in?",
-        "answer": "Of course. WhatsApp or email your latest reports with a brief note on your symptoms — a consultant writes back within 24 hours with a sense of whether you need a visit, more tests, or just a follow-up call."
+        "answer": "Of course. WhatsApp or email your latest reports with a brief note on your symptoms — Dr. Shristi writes back within 24 hours with a sense of whether you need a visit, more tests, or just a follow-up call."
       },
       {
         "question": "Do you accept insurance for cashless treatment?",

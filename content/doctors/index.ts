@@ -1,6 +1,4 @@
 import type { Doctor } from "@/modules/doctors/core/types";
-import { drAnanyaMishra } from "./dr-ananya-mishra";
-import { drRakeshJena } from "./dr-rakesh-jena";
-import { drSureshPatnaik } from "./dr-suresh-patnaik";
+import { drSouravShristi } from "./dr-sourav-shristi";
 
-export const DOCTORS: Doctor[] = [drSureshPatnaik, drAnanyaMishra, drRakeshJena];
+export const DOCTORS: Doctor[] = [drSouravShristi];

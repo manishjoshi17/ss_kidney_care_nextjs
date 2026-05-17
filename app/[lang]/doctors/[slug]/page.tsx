@@ -16,7 +16,7 @@ import { Reveal } from "@/components/motion/reveal";
 import { Breadcrumbs } from "@/components/chrome/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
 
-import { getAllDoctors, getDoctorBySlug, getDoctorSlugs, type DayOfWeek } from "@/modules/doctors";
+import { getDoctorBySlug, getDoctorSlugs, type DayOfWeek } from "@/modules/doctors";
 import { TESTIMONIALS } from "@/content/testimonials";
 import { site } from "@/content/site";
 import { getDictionary } from "@/lib/i18n";
@@ -57,7 +57,6 @@ export default async function DoctorDetailPage({ params }: PageProps) {
   const i = doctor.i18n[lang];
   const dict = getDictionary(lang);
   const doctorTestimonials = TESTIMONIALS.filter((t) => t.doctorSlug === doctor.slug);
-  const otherDoctors = getAllDoctors().filter((d) => d.slug !== slug).slice(0, 3);
 
   return (
     <>
@@ -66,7 +65,6 @@ export default async function DoctorDetailPage({ params }: PageProps) {
           <Breadcrumbs
             items={[
               { href: urlForLocale(lang, "/"), label: dict.nav.primary.home },
-              { href: urlForLocale(lang, "/doctors"), label: dict.nav.primary.doctors },
               { label: i.name },
             ]}
           />
@@ -90,7 +88,7 @@ export default async function DoctorDetailPage({ params }: PageProps) {
               </div>
             </Reveal>
             <Reveal delay={0.1} className="lg:col-span-7">
-              <Eyebrow>{dict.nav.primary.doctors}</Eyebrow>
+              <Eyebrow>{dict.doctors.index.eyebrow}</Eyebrow>
               <Heading as={1} variant="display" className="mt-4">{i.name}</Heading>
               <p className="text-lead mt-3 text-foreground-muted">{i.title}</p>
 
@@ -169,23 +167,7 @@ export default async function DoctorDetailPage({ params }: PageProps) {
             </div>
           )}
 
-          {otherDoctors.length > 0 && (
-            <div className="mt-section">
-              <Heading as={2}>{dict.doctors.detail.see_other}</Heading>
-              <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                {otherDoctors.map((d) => (
-                  <Link
-                    key={d.slug}
-                    href={urlForLocale(lang, `/doctors/${d.slug}`)}
-                    className="group flex flex-col p-5 rounded-[var(--radius-card)] border border-border bg-surface hover:border-primary transition-colors"
-                  >
-                    <p className="text-h4">{d.i18n[lang].name}</p>
-                    <p className="text-small text-foreground-muted mt-1">{d.i18n[lang].title}</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          {/* "See other doctors" removed per PLAN.md §12.2 — single-physician practice. */}
         </Container>
       </Section>
 

@@ -1,14 +1,14 @@
 {
-  "eyebrow": "International patients",
-  "title": "Care that travels well",
-  "lead": "Coming from outside India? We take care of more than the medicine.",
-  "what_we_handle_title": "What we handle",
+  "eyebrow": "Remote consultations",
+  "title": "Out of Sambalpur? Send your reports.",
+  "lead": "If you live elsewhere in Odisha — or anywhere we can't see you in person — WhatsApp Dr. Shristi with a photo of your reports and a brief note. He writes back within 24 hours with a sense of whether you need a visit, more tests, or just a follow-up call.",
+  "what_we_handle_title": "What works remotely",
   "what_we_handle": [
-    { "name": "Medical visa support", "body": "Invitation letters and documentation to support your visa application." },
-    { "name": "Airport pickup", "body": "We arrange transport between the airport and the hospital." },
-    { "name": "Accommodation", "body": "Partner guest houses near the hospital, vetted for cleanliness and comfort." },
-    { "name": "Coordinator", "body": "A dedicated coordinator stays in touch from before you arrive until you're home." }
+    { "name": "First review of reports", "body": "Send your blood, urine, BP records, and any prior imaging. You'll get a plain-language read-back and a recommendation." },
+    { "name": "Follow-up between visits", "body": "Once you're under our care, routine follow-ups — new lab results, medication adjustments, BP/sugar tracking — work over WhatsApp." },
+    { "name": "Second opinions", "body": "Send what you've been told and the reports it's based on. Dr. Shristi reads them carefully before responding." },
+    { "name": "Coordination with your local doctor", "body": "We're happy to coordinate with your local physician — share the contact and we'll reach out." }
   ],
-  "languages_title": "Languages spoken at the hospital",
-  "contact_coordinator": "Talk to our international coordinator"
+  "languages_title": "Languages we consult in",
+  "contact_coordinator": "WhatsApp Dr. Shristi"
 }

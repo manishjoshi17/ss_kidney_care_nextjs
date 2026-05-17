@@ -37,6 +37,10 @@ export default async function DisclaimerPage({ params }: PageProps) {
         </Reveal>
         <Prose className="mt-10">
           <p>{d.body}</p>
+          <h2>{d.burla_title}</h2>
+          <p>{d.burla_body}</p>
+          <h2>{d.emergency_title}</h2>
+          <p>{d.emergency_body}</p>
         </Prose>
       </Container>
     </Section>

@@ -1,8 +1,10 @@
 {
   "eyebrow": "Emergency",
   "title": "We're here, 24×7.",
-  "lead": "Call our line. A nephrology nurse will answer.",
+  "lead": "Call our line. Dr. Basanta Pradhan, MD will answer.",
   "call_now": "Call now",
+  "disclaimer_title": "About this number",
+  "disclaimer_body": "Dr. Pradhan provides after-hours emergency triage; he is an independent emergency partner physician, not a co-physician of SS Kidney Care. For routine nephrology consultations, please contact Dr. Sourav Shristi directly on the clinic line or via WhatsApp.",
   "ambulance_title": "Need an ambulance?",
   "ambulance_body": "Call the emergency line. Our team will dispatch the nearest ambulance and stay on the phone with you.",
   "before_help_title": "Before help arrives",

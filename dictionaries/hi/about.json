@@ -1,16 +1,16 @@
 {
   "eyebrow": "About us",
-  "title": "A focused nephrology hospital, built around the patients we serve.",
-  "lead": "SS Kidney Care opened its doors in Sambalpur in 2023 with a simple idea — that advanced kidney care should be specialist-led, locally available, and honestly explained. We've been growing carefully since.",
-  "mission_title": "Our mission",
-  "mission_body": "To give every kidney patient in western Odisha and the surrounding region the same standard of nephrology care a family member would expect — close to home, in their own language, without the long-distance referrals that once defined kidney care here.",
-  "values_title": "What we stand for",
-  "values": [
-    { "name": "Listening first", "body": "Every consult starts with your story, not a clipboard." },
-    { "name": "Plain words", "body": "We translate test results and treatment options into language you can act on." },
-    { "name": "Conservative care", "body": "If you don't need a procedure, we'll tell you. If you do, we'll explain it." },
-    { "name": "Always available", "body": "Our 24×7 line is staffed by a dialysis-trained nurse, not a call centre." },
-    { "name": "Continuous learning", "body": "We follow the evidence and audit our outcomes — and we tell you what we've learned." }
+  "title": "A focused nephrology practice, built around the patients of western Odisha.",
+  "lead": "SS Kidney Care opened in Sambalpur in 2023 with a simple idea — that advanced kidney care should be specialist-led, locally available, and honestly explained. Dr. Sourav Shristi runs it as a full-time clinic practice alongside his role as Asst. Professor in the Department of Nephrology, VIMSAR Burla.",
+  "vimsar_paragraph": "Dr. Shristi's academic role at VIMSAR — where he teaches the next generation of nephrologists alongside his clinic practice — keeps the standard of care here in step with what's taught at a government medical college. It also gives him direct access to a renal-pathology partnership for kidney biopsies, and to the regional research community studying the kidney problems specific to the Hirakud agricultural belt.",
+  "how_we_practice_title": "How we practice",
+  "how_we_practice": [
+    { "name": "Thirty-minute first consults", "body": "We sit with you, look at your reports, and walk through what's actually happening — in the time it takes to do that properly." },
+    { "name": "Plain Odia or Hindi at home", "body": "If your family speaks Odia or Hindi at home, that's the language we use to explain the diagnosis and the plan. English is offered, not assumed." },
+    { "name": "No upsell", "body": "If you don't need a procedure, we'll tell you. If a particular test would change the plan, we'll explain why before we order it." },
+    { "name": "Wednesday follow-up calls", "body": "When we start a new medication or change a dose, you can expect a call from us on the next Wednesday to ask how it's settling in." },
+    { "name": "Second opinions welcome", "body": "Even when our answer matches the first opinion, we'll explain why so you leave with the picture, not just the verdict." },
+    { "name": "Multi-organ workup", "body": "Kidney problems rarely live alone. We assess the kidney alongside heart, diabetes and BP — under one consultation, not three referrals." }
   ],
   "accreditations_title": "Recognition & affiliations"
 }

@@ -7,11 +7,11 @@
   },
   "columns": {
     "brand": {
-      "tagline": "Advanced nephrology. The future of kidney health."
+      "tagline": "Advanced nephrology — the future of kidney health."
     },
     "services": "Treatments",
     "for_patients": "For patients",
-    "hospital": "Hospital",
+    "hospital": "Clinic",
     "get_in_touch": "Get in touch"
   },
   "get_in_touch": {
@@ -20,6 +20,11 @@
     "email_label": "Email",
     "hours_label": "Hours",
     "emergency_label": "24×7 emergency"
+  },
+  "burla": {
+    "label": "Also at",
+    "title": "Burla — VIMSAR consultation point",
+    "disclaimer_short": "Burla listing reflects Dr. Shristi's VIMSAR consultation hours and is not an SS Kidney Care branch."
   },
   "bottom_strip": {
     "copyright": "© {year} SS Kidney Care, Sambalpur. All rights reserved."

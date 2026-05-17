@@ -16,6 +16,7 @@ import { site } from "@/content/site";
 import { getDictionary } from "@/lib/i18n";
 import { asSupportedLocale, urlForLocale } from "@/lib/locale";
 import { baseMetadata } from "@/lib/seo";
+import { waHref } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ lang: string }>;
@@ -53,7 +54,7 @@ export default async function InternationalPatientsPage({ params }: PageProps) {
           <Stagger className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {dict.international.what_we_handle.map((item) => (
               <article key={item.name} className="flex flex-col gap-3 p-5 rounded-[var(--radius-card)] border border-border bg-surface">
-                <Icon name="translate" size={28} weight="duotone" className="text-primary" />
+                <Icon name="whatsapp" size={28} weight="duotone" className="text-primary" />
                 <Heading as={3} className="text-h4">{item.name}</Heading>
                 <p className="text-small text-foreground-muted">{item.body}</p>
               </article>
@@ -71,14 +72,18 @@ export default async function InternationalPatientsPage({ params }: PageProps) {
             </div>
           </Reveal>
           <Reveal delay={0.1} className="rounded-[var(--radius-card)] border border-border bg-surface-cream p-6">
-            <p className="text-eyebrow text-on-cream/65 mb-3">{dict.common.actions.talk_to_nephrologist}</p>
-            <Button asChild variant="primary" size="adaptive">
-              <a href={`mailto:${site.email.international}`}>
+            <p className="text-eyebrow text-on-cream/65 mb-3">{dict.common.actions.chat_whatsapp}</p>
+            <Button asChild variant="accent" size="adaptive">
+              <a
+                href={waHref(site.phoneNumbers.whatsapp, "Hello Dr. Shristi, I'm out of Sambalpur and would like to send my reports for a remote review.")}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon name="whatsapp" size={18} weight="fill" />
                 {dict.international.contact_coordinator}
-                <Icon name="arrow-right" size={18} />
               </a>
             </Button>
-            <p className="text-small text-on-cream/85 mt-3">{site.email.international}</p>
+            <p className="text-small text-on-cream/85 mt-3">{site.phoneNumbers.whatsapp}</p>
           </Reveal>
         </div>
       </Container>

@@ -3,7 +3,6 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "doctors": "Doctors",
     "facilities": "Facilities",
     "resources": "Patient resources",
     "contact": "Contact"
@@ -25,7 +24,7 @@
     "appointment": "Appointment",
     "emergency": "Emergency",
     "insurance": "Insurance & TPA",
-    "international": "International patients",
+    "international": "Remote consultations",
     "gallery": "Gallery",
     "testimonials": "Patient stories",
     "careers": "Careers"

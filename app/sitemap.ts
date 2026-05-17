@@ -10,7 +10,8 @@ const STATIC_PATHS: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/", priority: 1, changeFrequency: "weekly" },
   { path: "/about", priority: 0.8, changeFrequency: "monthly" },
   { path: "/services", priority: 0.9, changeFrequency: "weekly" },
-  { path: "/doctors", priority: 0.9, changeFrequency: "weekly" },
+  // `/doctors` is 308-redirected to `/doctors/dr-sourav-shristi` (see next.config.mjs).
+  // The dynamic doctor slug below covers it.
   { path: "/facilities", priority: 0.7, changeFrequency: "monthly" },
   { path: "/gallery", priority: 0.6, changeFrequency: "monthly" },
   { path: "/testimonials", priority: 0.6, changeFrequency: "monthly" },

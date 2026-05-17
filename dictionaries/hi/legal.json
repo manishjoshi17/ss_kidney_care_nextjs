@@ -3,7 +3,7 @@
     "eyebrow": "Privacy",
     "title": "Privacy policy",
     "last_updated_label": "Last updated",
-    "last_updated": "16 May 2026",
+    "last_updated": "17 May 2026",
     "sections": [
       { "heading": "What we collect", "body": "Information you provide via our forms — name, email, phone, and the message you send. We do not collect medical history unless you choose to share it with us." },
       { "heading": "How we use it", "body": "To respond to your enquiry. We do not sell or share your information with third parties for marketing." },
@@ -16,9 +16,9 @@
     "eyebrow": "Terms",
     "title": "Terms of use",
     "last_updated_label": "Last updated",
-    "last_updated": "16 May 2026",
+    "last_updated": "17 May 2026",
     "sections": [
-      { "heading": "About this site", "body": "This website is published by SS Kidney Care for general information about the hospital and the services we offer." },
+      { "heading": "About this site", "body": "This website is published by SS Kidney Care for general information about the clinic and the services we offer." },
       { "heading": "No medical advice", "body": "Content here is informational. It does not replace consultation with a qualified clinician. Always confirm with a doctor before acting on anything you read." },
       { "heading": "Accuracy", "body": "We try to keep everything accurate and up to date. Where information may be out of date, we mention it." },
       { "heading": "External links", "body": "Where we link to other sites, we don't control their content or claims." }
@@ -27,6 +27,10 @@
   "disclaimer": {
     "eyebrow": "Disclaimer",
     "title": "Medical disclaimer",
-    "body": "The information on this website is provided for general awareness about kidney health and the services we offer. It is not a substitute for medical advice from a qualified clinician. Treatment plans depend on individual factors only your nephrologist can assess. If you believe you are experiencing a medical emergency, please call our 24×7 line or your local emergency number immediately."
+    "body": "The information on this website is provided for general awareness about kidney health and the services we offer. It is not a substitute for medical advice from a qualified clinician. Treatment plans depend on individual factors only your nephrologist can assess. If you believe you are experiencing a medical emergency, please call our 24×7 line or your local emergency number immediately.",
+    "burla_title": "About the Burla consultation point",
+    "burla_body": "Dr. Sourav Shristi additionally consults at Burla in his capacity as Assistant Professor, Department of Nephrology, VIMSAR (a government medical college hospital). The Burla address listed on this website is the VIMSAR consultation point and is not a branch of SS Kidney Care. For SS Kidney Care services, please visit our Sambalpur clinic.",
+    "emergency_title": "About the 24×7 emergency line",
+    "emergency_body": "Our 24×7 emergency line is staffed by Dr. Basanta Pradhan, MD — an independent emergency partner physician. Dr. Pradhan is not a co-physician of SS Kidney Care and does not provide routine nephrology consultations under SS Kidney Care."
   }
 }

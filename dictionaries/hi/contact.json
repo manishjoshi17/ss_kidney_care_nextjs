@@ -1,7 +1,27 @@
 {
   "eyebrow": "Contact",
-  "title": "Talk to us",
-  "lead": "Address, phone, hours — and a quick form for any enquiry.",
+  "title": "Three ways to reach us",
+  "lead": "The Sambalpur clinic is the main consultation point. Dr. Shristi also sees VIMSAR cases at the Burla consultation point (independent of SS Kidney Care). Our 24×7 emergency line is run by an independent partner physician.",
+  "blocks": {
+    "primary": {
+      "label": "Primary clinic",
+      "title": "SS Kidney Care — Sambalpur",
+      "phone_label": "Reception",
+      "whatsapp_label": "WhatsApp (Dr. Shristi, consultation only)",
+      "email_label": "Email",
+      "hours_label": "OPD hours"
+    },
+    "burla": {
+      "label": "Also at",
+      "title": "Burla — VIMSAR consultation point",
+      "phone_label": "Phone"
+    },
+    "emergency": {
+      "label": "24×7 Emergency",
+      "title": "Independent emergency partner",
+      "clarifier": "For after-hours and acute emergencies. For routine appointments and nephrology consultations, please use the SS Kidney Care numbers above."
+    }
+  },
   "form": {
     "name_label": "Your name",
     "name_placeholder": "How should we address you?",

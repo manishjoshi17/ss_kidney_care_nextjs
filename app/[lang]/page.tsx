@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/sections/hero";
 import { ServicesStrip } from "@/components/sections/services-strip";
 import { StatsStrip } from "@/components/sections/stats-strip";
-import { DoctorsStrip } from "@/components/sections/doctors-strip";
-import { TestimonialsStrip } from "@/components/sections/testimonials-strip";
+import { MeetDrShristi } from "@/components/sections/meet-dr-shristi";
+import { PatientStories } from "@/components/sections/patient-stories";
+import { SpecialtySpotlight } from "@/components/sections/specialty-spotlight";
+import { ResearchBand } from "@/components/sections/research-band";
 import { InsuranceStrip } from "@/components/sections/insurance-strip";
 import { CtaBand } from "@/components/sections/cta-band";
 import { FaqAccordion } from "@/components/sections/faq-accordion";
@@ -37,15 +39,28 @@ export default async function HomePage({ params }: PageProps) {
   return (
     <>
       <Hero locale={lang} home={dict.home} common={dict.common} />
+      <MeetDrShristi locale={lang} home={dict.home} common={dict.common} />
+      <PatientStories
+        locale={lang}
+        eyebrowIndex="03"
+        copy={{
+          eyebrow: dict.home.patient_stories.eyebrow,
+          title: dict.home.patient_stories.title,
+          aggregate_label: dict.home.patient_stories.aggregate_label,
+          aggregate_count_label: dict.home.patient_stories.aggregate_count_label,
+          aggregate_cta: dict.home.patient_stories.aggregate_cta,
+        }}
+        limit={3}
+      />
       <ServicesStrip locale={lang} home={dict.home} common={dict.common} />
+      <SpecialtySpotlight locale={lang} home={dict.home} />
       <StatsStrip home={dict.home} />
-      <DoctorsStrip locale={lang} home={dict.home} common={dict.common} />
-      <TestimonialsStrip locale={lang} home={dict.home} />
+      <ResearchBand locale={lang} home={dict.home} />
       <InsuranceStrip home={dict.home} />
       <CtaBand locale={lang} home={dict.home} common={dict.common} />
       <FaqAccordion
         eyebrow={dict.home.faq.eyebrow}
-        index="06"
+        index="09"
         title={dict.home.faq.title}
         lead={dict.home.faq.lead}
         items={dict.home.faq.items}

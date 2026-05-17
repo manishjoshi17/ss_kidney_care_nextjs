@@ -80,11 +80,40 @@
       "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
       "WebFetch(domain:www.clinnephrologyjournal.com)",
       "WebFetch(domain:sskidneycare.netlify.app)",
-      "WebFetch(domain:sskidneycareclinic.com)"
+      "WebFetch(domain:sskidneycareclinic.com)",
+      "Bash(rm -v content/doctors/dr-suresh-patnaik.ts content/doctors/dr-ananya-mishra.ts content/doctors/dr-rakesh-jena.ts content/services/peritoneal-dialysis.ts content/services/plasmapheresis.ts 'app/[lang]/doctors/[slug]/opengraph-image.tsx')",
+      "Bash(rm -v 'app/[lang]/doctors/page.tsx')",
+      "Bash(rg -niE \"'inter'|'fraunces'\" .)",
+      "Bash(rg -niE 'learn more|click here|get started|sign up|elevate|empower|streamline' app/ dictionaries/)",
+      "Bash(npx next *)",
+      "Bash(npx eslint *)",
+      "Bash(curl -sf http://localhost:3010/en/about -o /dev/null -w \"about %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/en -o /dev/null -w \"en HOME %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/hi -o /dev/null -w \"hi HOME %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/or -o /dev/null -w \"or HOME %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/en/about -o /dev/null -w \"en ABOUT %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/en/services -o /dev/null -w \"en SVCS %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -s http://localhost:3010/en)",
+      "Bash(/usr/bin/curl -s \"http://localhost:3010/_next/static/css/$\\(curl -s http://localhost:3010/en)",
+      "Bash(/usr/bin/curl -s 'http://localhost:3010/_next/static/chunks/%5Broot-of-the-server%5D__0m.df4a._.css')",
+      "WebFetch(domain:share.google)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(/usr/bin/curl -s http://localhost:3010/en/appointment)",
+      "Bash(/usr/bin/curl -sX POST http://localhost:3010/api/contact -H 'Content-Type: application/json' -d '{\"name\":\"Test User\",\"email\":\"test@example.com\",\"phone\":\"+91 99999 99999\",\"reason\":\"general\",\"message\":\"Just testing the contact form submission flow.\"}' -w '\\\\nHTTP %{http_code}\\\\n')",
+      "Bash(/usr/bin/curl -sX POST http://localhost:3010/api/contact -H \"Content-Type: application/json\" -d '{\"name\":\"X\",\"email\":\"bad\",\"phone\":\"abc\",\"reason\":\"general\",\"message\":\"short\"}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sX POST http://localhost:3010/api/contact -H 'Content-Type: application/json' -d '{\"name\":\"Test User\",\"email\":\"test@example.com\",\"phone\":\"+91 99999 99999\",\"reason\":\"general\",\"message\":\"Just testing the contact form submission flow.\",\"website\":\"\"}' -w '\\\\nHTTP %{http_code}\\\\n')",
+      "Bash(/usr/bin/curl -s http://localhost:3010/en/contact)",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/brand/logo-horizontal.svg -o /dev/null -w \"fullcolor %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/brand/logo-horizontal-reverse.svg -o /dev/null -w \"reverse   %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -sf http://localhost:3010/brand/logo-horizontal-mono.svg -o /dev/null -w \"mono      %{http_code}\\\\n\")",
+      "Bash(/usr/bin/curl -s http://localhost:3010/en/about)",
+      "Bash(curl -o /dev/null -s -w '%{http_code}' '__TRACKED_VAR__?auto=format&fit=crop&w=400&q=80')"
     ],
     "additionalDirectories": [
       "/Volumes/software-development/main_htdocs/active/ss-kidney-care/app/[lang]/_design-system",
-      "/private/tmp"
+      "/private/tmp",
+      "/Volumes/software-development/main_htdocs/active/ss-kidney-care/app/[lang]/doctors/[slug]",
+      "/Volumes/software-development/main_htdocs/active/ss-kidney-care/app/[lang]/doctors"
     ]
   }
 }

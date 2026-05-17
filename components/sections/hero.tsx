@@ -12,10 +12,15 @@ import { Float } from "@/components/motion/float";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Sequence, SequenceStep } from "@/components/motion/sequence";
 import { TextReveal } from "@/components/motion/text-reveal";
+import { DoctorIdentityCard } from "@/components/sections/doctor-identity-card";
+import { StarRating } from "@/components/sections/star-rating";
 
+import { drSouravShristi } from "@/content/doctors/dr-sourav-shristi";
 import { site } from "@/content/site";
+import { TESTIMONIALS_AGGREGATE } from "@/content/testimonials";
 import { type Dictionary } from "@/lib/i18n";
 import { type SupportedLocale, urlForLocale } from "@/lib/locale";
+import { telHref, waHref } from "@/lib/utils";
 
 interface HeroProps {
   locale: SupportedLocale;
@@ -24,6 +29,7 @@ interface HeroProps {
 }
 
 export function Hero({ locale, home, common }: HeroProps) {
+  void common;
   return (
     <section
       className="relative overflow-hidden bg-gradient-hero with-grain"
@@ -54,60 +60,92 @@ export function Hero({ locale, home, common }: HeroProps) {
               </h1>
             </SequenceStep>
             <SequenceStep delay={0.4}>
-              <p className="font-display text-h2 text-primary-deep mt-4 max-w-[24ch]">
-                {home.hero.brand_phrase}
+              <p className="font-display text-h3 text-primary-deep mt-4 max-w-[40ch]">
+                {home.hero.kicker}
               </p>
             </SequenceStep>
             <SequenceStep delay={0.5}>
-              <p className="text-lead mt-6 max-w-[50ch]">{home.hero.subhead}</p>
+              <p className="text-lead mt-6 max-w-[50ch]">{home.hero.lead}</p>
             </SequenceStep>
             <SequenceStep delay={0.7}>
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap items-center gap-3">
                 <Magnetic strength={10}>
                   <Button asChild variant="accent" size="adaptive">
-                    <Link href={urlForLocale(locale, "/appointment")}>
-                      {common.actions.schedule_consultation}
-                      <Icon name="arrow-right" size={18} />
-                    </Link>
+                    <a
+                      href={waHref(site.phoneNumbers.whatsapp, home.hero.whatsapp_prefill)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name="whatsapp" size={18} weight="fill" />
+                      {home.hero.primary_cta}
+                    </a>
                   </Button>
                 </Magnetic>
                 <Button asChild variant="outline" size="adaptive">
-                  <Link href={urlForLocale(locale, "/services")}>{common.actions.find_care_plan}</Link>
+                  <a href={telHref(site.phoneNumbers.general)}>
+                    <Icon name="phone" size={18} />
+                    {home.hero.secondary_cta}
+                  </a>
                 </Button>
+                <Link
+                  href="#patient-stories"
+                  className="text-small text-primary-deep hover:underline inline-flex items-center gap-1 ml-1"
+                >
+                  {home.hero.transitional_cta} <Icon name="arrow-right" size={14} />
+                </Link>
               </div>
             </SequenceStep>
             <SequenceStep delay={0.9}>
               <a
-                href={`tel:${site.phoneNumbers.appointment.replace(/[^\d+]/g, "")}`}
-                className="mt-8 inline-flex items-center gap-2 text-small text-foreground-muted hover:text-foreground"
+                href={TESTIMONIALS_AGGREGATE.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex flex-wrap items-center gap-x-2 gap-y-2 max-w-full text-small text-foreground-muted hover:text-foreground leading-none"
               >
-                <Icon name="phone" size={16} />
-                {common.labels.phone}: <span className="font-semibold text-foreground">{site.phoneNumbers.appointment}</span>
+                <StarRating value={TESTIMONIALS_AGGREGATE.rating} size={16} />
+                <span className="font-semibold text-foreground">{TESTIMONIALS_AGGREGATE.rating}</span>
+                <span>on</span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={TESTIMONIALS_AGGREGATE.logoSrc}
+                  alt={TESTIMONIALS_AGGREGATE.source}
+                  className="block h-5 w-auto shrink-0"
+                />
+                <span>· {TESTIMONIALS_AGGREGATE.count}+ reviews</span>
+                <Icon name="arrow-up-right" size={14} />
               </a>
             </SequenceStep>
           </div>
 
-          {/* Hero visual — real photo bleed with bean-curve overlay */}
+          {/* Hero visual — portrait + identity card */}
           <div className="lg:col-span-5 relative">
-            <SequenceStep delay={0.6} className="relative lg:translate-x-6">
+            <SequenceStep delay={0.6} className="relative lg:translate-x-6 flex flex-col gap-5">
               <div className="relative aspect-[4/5] sm:aspect-[3/4] rounded-[var(--radius-section)] bg-surface border border-border shadow-[var(--shadow-3)] overflow-hidden">
-                <OptimizedImage
-                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1200&q=85"
-                  alt="A consultant nephrologist at SS Kidney Care"
-                  fill
-                  priority
-                  sizes="(min-width:1024px) 42vw, 100vw"
-                  className="object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-900/60 via-primary-900/15 to-transparent" />
-                <div className="absolute left-5 right-5 bottom-5 flex items-center gap-3 rounded-[var(--radius-card)] bg-on-primary/95 backdrop-blur px-4 py-3">
-                  <BeanCurve size={28} className="text-primary shrink-0" />
-                  <div className="min-w-0">
-                    <p className="text-tiny uppercase tracking-wide text-foreground-muted">{home.stats.title}</p>
-                    <p className="text-small font-semibold text-foreground truncate">{home.cta_band.phrase}</p>
-                  </div>
-                </div>
+                {drSouravShristi.photo && (
+                  <OptimizedImage
+                    src={drSouravShristi.photo}
+                    alt={drSouravShristi.i18n[locale].name}
+                    fill
+                    priority
+                    sizes="(min-width:1024px) 42vw, 100vw"
+                    className="object-cover object-center"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-900/60 via-primary-900/15 to-transparent pointer-events-none" />
               </div>
+              <DoctorIdentityCard
+                locale={locale}
+                variant="compact"
+                copy={{
+                  chip_dm: "DM Nephrology",
+                  chip_transplant: "Transplant + Interventional",
+                  chip_vimsar: "VIMSAR Faculty",
+                  chip_research: "Published researcher",
+                  primary_cta: home.hero.primary_cta,
+                  secondary_cta: home.hero.secondary_cta,
+                }}
+                whatsappPrefill={home.hero.whatsapp_prefill}
+              />
               <div
                 aria-hidden
                 className="absolute -bottom-3 -right-3 size-32 rounded-full bg-accent/20 blur-3xl pointer-events-none"

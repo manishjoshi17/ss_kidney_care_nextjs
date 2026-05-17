@@ -3,7 +3,6 @@
     "home": "होम",
     "about": "हमारे बारे में",
     "services": "उपचार",
-    "doctors": "डॉक्टर",
     "facilities": "सुविधाएँ",
     "resources": "मरीज़ संसाधन",
     "contact": "संपर्क"
@@ -18,14 +17,14 @@
   "mobile_groups": {
     "main": "मुख्य",
     "for_patients": "मरीज़ों के लिए",
-    "hospital": "अस्पताल",
+    "hospital": "क्लिनिक",
     "legal": "कानूनी"
   },
   "secondary": {
     "appointment": "अपॉइंटमेंट",
     "emergency": "इमरजेंसी",
     "insurance": "बीमा और टीपीए",
-    "international": "अंतरराष्ट्रीय मरीज़",
+    "international": "रिमोट परामर्श",
     "gallery": "गैलरी",
     "testimonials": "मरीज़ों की कहानियाँ",
     "careers": "करियर"

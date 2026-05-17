@@ -34,10 +34,10 @@ export function Header({ locale, nav, common }: HeaderProps) {
 
   const navItems = [
     { href: urlForLocale(locale, "/services"), label: nav.primary.services },
-    { href: urlForLocale(locale, "/doctors"), label: nav.primary.doctors },
+    { href: urlForLocale(locale, "/about"), label: nav.primary.about },
     { href: urlForLocale(locale, "/facilities"), label: nav.primary.facilities },
     { href: urlForLocale(locale, "/resources"), label: nav.primary.resources },
-    { href: urlForLocale(locale, "/about"), label: nav.primary.about },
+    { href: urlForLocale(locale, "/contact"), label: nav.primary.contact },
   ];
 
   return (

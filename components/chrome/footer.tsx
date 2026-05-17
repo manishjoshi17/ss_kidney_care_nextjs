@@ -100,7 +100,7 @@ export function Footer({ locale, nav, footer }: FooterProps) {
             <FooterColumnTitle>{footer.columns.hospital}</FooterColumnTitle>
             <ul className="space-y-2">
               <FooterLink href={urlForLocale(locale, "/about")}>{nav.primary.about}</FooterLink>
-              <FooterLink href={urlForLocale(locale, "/doctors")}>{nav.primary.doctors}</FooterLink>
+              <FooterLink href={urlForLocale(locale, "/doctors/dr-sourav-shristi")}>Dr. Sourav Shristi</FooterLink>
               <FooterLink href={urlForLocale(locale, "/facilities")}>{nav.primary.facilities}</FooterLink>
               <FooterLink href={urlForLocale(locale, "/gallery")}>{nav.secondary.gallery}</FooterLink>
               <FooterLink href={urlForLocale(locale, "/testimonials")}>{nav.secondary.testimonials}</FooterLink>
@@ -137,16 +137,41 @@ export function Footer({ locale, nav, footer }: FooterProps) {
                 <p className="text-on-navy/90">{site.hours.monday_to_friday}</p>
                 <p className="text-on-navy/70 text-tiny">{site.hours.saturday}</p>
               </li>
-              <li className="flex items-center gap-2 mt-3 p-2 rounded-[var(--radius-chip)] bg-accent text-on-accent">
-                <Icon name="warning" size={16} weight="fill" />
-                <div>
+              <li className="flex items-start gap-2 mt-3 p-2 rounded-[var(--radius-chip)] bg-destructive/15 text-on-navy">
+                <Icon name="warning" size={16} weight="fill" className="text-destructive mt-0.5 shrink-0" />
+                <div className="min-w-0">
                   <p className="text-tiny font-medium">{footer.get_in_touch.emergency_label}</p>
-                  <a href={telHref(site.phoneNumbers.emergency)} className="text-small font-bold hover:underline">
-                    {site.phoneNumbers.emergency}
+                  <p className="text-small text-on-navy/85 truncate">{site.emergencyContact.name}, {site.emergencyContact.qualification}</p>
+                  <a href={telHref(site.emergencyContact.phone)} className="text-small font-bold text-on-navy hover:underline">
+                    {site.emergencyContact.phone}
                   </a>
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Burla VIMSAR consultation point — separate block per PLAN.md §11 row 21 */}
+        <div className="mt-10 rounded-[var(--radius-card)] border border-on-navy/15 bg-on-navy/[0.04] p-5">
+          <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between md:gap-8">
+            <div className="flex-1 min-w-0">
+              <p className="text-tiny uppercase tracking-wide text-on-navy/60">{footer.burla.label}</p>
+              <p className="text-small font-semibold text-on-navy mt-1">{footer.burla.title}</p>
+              <address className="not-italic text-small text-on-navy/85 mt-1 leading-normal">
+                {site.consultationPoint.burla.addressLines.map((line) => (
+                  <span key={line} className="block">{line}</span>
+                ))}
+              </address>
+              <a
+                href={telHref(site.consultationPoint.burla.phone)}
+                className="text-small text-on-navy/85 hover:text-on-navy hover:underline mt-1 inline-block"
+              >
+                {site.consultationPoint.burla.phone}
+              </a>
+            </div>
+            <p className="text-tiny text-on-navy/65 max-w-[42ch]">
+              {footer.burla.disclaimer_short}
+            </p>
           </div>
         </div>
 

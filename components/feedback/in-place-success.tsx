@@ -1,6 +1,5 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
@@ -14,10 +13,13 @@ interface InPlaceSuccessProps {
 
 /**
  * Replaces a form in place on successful submission.
- * Kidney-curve checkmark draws on entrance (CLAUDE.md §10, §14).
+ * Kidney-curve checkmark draws on entrance via CSS keyframes (see globals.css
+ * `ss-path-draw` / `ss-path-draw-delayed`). Pure CSS — avoids the `LazyMotion strict`
+ * SVG `pathLength` corner case in framer-motion v12 that was silently aborting
+ * <m.path /> renders inside this card and preventing the success state from showing.
+ * Respects `prefers-reduced-motion` via the keyframe rule.
  */
 export function InPlaceSuccess({ title, description, action, className }: InPlaceSuccessProps) {
-  const reduce = useReducedMotion();
   return (
     <div
       role="status"
@@ -29,29 +31,25 @@ export function InPlaceSuccess({ title, description, action, className }: InPlac
     >
       <svg width={72} height={72} viewBox="0 0 100 100" aria-hidden>
         {/* bean curve */}
-        <motion.path
+        <path
           d="M50 18 C72 18 86 32 86 50 C86 72 68 86 50 86 C36 86 26 78 26 66 C26 56 34 50 44 50"
+          pathLength={1}
           fill="none"
           stroke="currentColor"
-          className="text-primary"
+          className="text-primary ss-path-draw"
           strokeWidth={3}
           strokeLinecap="round"
-          initial={reduce ? false : { pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         />
         {/* checkmark sweep */}
-        <motion.path
+        <path
           d="M36 54 L46 64 L66 42"
+          pathLength={1}
           fill="none"
           stroke="currentColor"
-          className="text-accent"
+          className="text-accent ss-path-draw-delayed"
           strokeWidth={4}
           strokeLinecap="round"
           strokeLinejoin="round"
-          initial={reduce ? false : { pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          transition={{ duration: 0.4, delay: 0.5, ease: [0.34, 1.45, 0.64, 1] }}
         />
       </svg>
       <p className="text-h2 text-foreground">{title}</p>

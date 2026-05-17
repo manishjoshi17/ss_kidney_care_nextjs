@@ -34,8 +34,8 @@ export function MobileMenu({ locale, nav, common }: MobileMenuProps) {
       items: [
         { href: urlForLocale(locale, "/"), label: nav.primary.home, icon: "home" },
         { href: urlForLocale(locale, "/services"), label: nav.primary.services, icon: "compass" },
-        { href: urlForLocale(locale, "/doctors"), label: nav.primary.doctors, icon: "star" },
         { href: urlForLocale(locale, "/about"), label: nav.primary.about, icon: "quote" },
+        { href: urlForLocale(locale, "/contact"), label: nav.primary.contact, icon: "phone" },
       ],
     },
     {

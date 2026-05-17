@@ -1,22 +1,22 @@
 {
   "home": {
-    "title": "SS Kidney Care — Advanced nephrology in Sambalpur",
-    "description": "Specialist kidney care in Sambalpur, Odisha. Dialysis, CKD management, AKI treatment, preventive screening and advanced therapies — all in one place."
+    "title": "Dr. Sourav Shristi — Consultant Nephrologist & Transplant Physician, Sambalpur",
+    "description": "DM Nephrology · Asst. Professor at VIMSAR Burla · 4.9 on JustDial. SS Kidney Care: dialysis, CKD management, transplant workup and the kind of explanation a worried family actually deserves."
   },
   "about": {
     "title": "About — SS Kidney Care",
-    "description": "Founded in 2023, SS Kidney Care brings advanced nephrology to western Odisha. Our story, the team, and the standards we hold ourselves to."
+    "description": "Founded in 2023 in Sambalpur. Run by Dr. Sourav Shristi — DM Nephrology, Asst. Professor at VIMSAR Burla, published researcher on regional CKD."
   },
   "services": {
     "index": {
       "title": "Treatments — SS Kidney Care",
-      "description": "Hemodialysis, peritoneal dialysis, CKD management, AKI treatment, hypertension and diabetes-related kidney care, preventive screening and plasmapheresis."
+      "description": "CKD management, dialysis, diabetic kidney disease, kidney biopsy, transplant workup, critical-care nephrology — all under Dr. Sourav Shristi."
     }
   },
   "doctors": {
     "index": {
-      "title": "Our consultants — SS Kidney Care",
-      "description": "Meet our consultant nephrologists. Areas of focus, languages spoken, days available."
+      "title": "Dr. Sourav Shristi — SS Kidney Care",
+      "description": "Consultant Nephrologist, Transplant Physician & Interventional Nephrologist. DM Nephrology, Asst. Professor at VIMSAR Burla."
     }
   },
   "facilities": {
@@ -25,11 +25,11 @@
   },
   "gallery": {
     "title": "Gallery — SS Kidney Care",
-    "description": "Photos of the hospital, our team, and patient events."
+    "description": "Inside the clinic at SS Kidney Care, Sambalpur."
   },
   "testimonials": {
     "title": "Patient stories — SS Kidney Care",
-    "description": "Stories from the families we've cared for."
+    "description": "Stories from the families Dr. Shristi has cared for."
   },
   "resources": {
     "index": {
@@ -39,23 +39,23 @@
   },
   "insurance": {
     "title": "Insurance & TPA — SS Kidney Care",
-    "description": "The insurance and TPA partners we work with, and how cashless treatment works at the hospital."
+    "description": "The insurance and TPA partners we work with, and how cashless treatment works at the clinic."
   },
   "international_patients": {
-    "title": "International patients — SS Kidney Care",
-    "description": "Coming from outside India? Visa support, transport, lodging and care coordination — handled by our team."
+    "title": "Remote consultations — SS Kidney Care",
+    "description": "Out of Sambalpur? Send your reports on WhatsApp; Dr. Shristi writes back within 24 hours with a sense of whether you need a visit, more tests, or just a follow-up call."
   },
   "appointment": {
-    "title": "Schedule the visit — SS Kidney Care",
-    "description": "Tell us what's going on and a comfortable time to call. We'll get back within 24 hours."
+    "title": "Book an appointment — SS Kidney Care",
+    "description": "WhatsApp Dr. Shristi to send your reports, or call the clinic. We'll get back within 24 hours."
   },
   "contact": {
-    "title": "Contact us — SS Kidney Care",
-    "description": "Address, hours, phone, and a quick form for any enquiry. SS Kidney Care, Sambalpur."
+    "title": "Contact — SS Kidney Care",
+    "description": "Address, phones, hours, and how to reach Dr. Shristi. Sambalpur primary clinic + Burla VIMSAR consultation point + 24×7 emergency partner."
   },
   "emergency": {
-    "title": "Emergency — SS Kidney Care",
-    "description": "Our 24×7 line, ambulance request, and what to do before help arrives."
+    "title": "24×7 Emergency — SS Kidney Care",
+    "description": "Our 24×7 emergency line is staffed by Dr. Basanta Pradhan, MD — an independent emergency partner physician."
   },
   "careers": {
     "title": "Careers — SS Kidney Care",
@@ -71,6 +71,6 @@
   },
   "disclaimer": {
     "title": "Medical disclaimer — SS Kidney Care",
-    "description": "Important information about the medical content on this site."
+    "description": "Important information about the medical content on this site, and the Burla VIMSAR consultation point."
   }
 }
