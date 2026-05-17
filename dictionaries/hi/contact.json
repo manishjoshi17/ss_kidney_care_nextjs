@@ -1,52 +1,52 @@
 {
-  "eyebrow": "Contact",
-  "title": "Three ways to reach us",
-  "lead": "The Sambalpur clinic is the main consultation point. Dr. Shristi also sees VIMSAR cases at the Burla consultation point (independent of SS Kidney Care). Our 24×7 emergency line is run by an independent partner physician.",
+  "eyebrow": "संपर्क",
+  "title": "हम तक पहुँचने के तीन तरीक़े",
+  "lead": "सम्बलपुर क्लिनिक मुख्य परामर्श बिंदु है। डॉ. श्रीष्टि VIMSAR के मामले बुर्ला परामर्श बिंदु पर भी देखते हैं (जो SS किडनी केयर से स्वतंत्र है)। हमारी 24×7 इमरजेंसी लाइन एक स्वतंत्र पार्टनर चिकित्सक द्वारा चलाई जाती है।",
   "blocks": {
     "primary": {
-      "label": "Primary clinic",
-      "title": "SS Kidney Care — Sambalpur",
-      "phone_label": "Reception",
-      "whatsapp_label": "WhatsApp (Dr. Shristi, consultation only)",
-      "email_label": "Email",
-      "hours_label": "OPD hours"
+      "label": "मुख्य क्लिनिक",
+      "title": "SS किडनी केयर — सम्बलपुर",
+      "phone_label": "रिसेप्शन",
+      "whatsapp_label": "WhatsApp (डॉ. श्रीष्टि, केवल परामर्श)",
+      "email_label": "ईमेल",
+      "hours_label": "OPD समय"
     },
     "burla": {
-      "label": "Also at",
-      "title": "Burla — VIMSAR consultation point",
-      "phone_label": "Phone"
+      "label": "यहाँ भी",
+      "title": "बुर्ला — VIMSAR परामर्श बिंदु",
+      "phone_label": "फ़ोन"
     },
     "emergency": {
-      "label": "24×7 Emergency",
-      "title": "Independent emergency partner",
-      "clarifier": "For after-hours and acute emergencies. For routine appointments and nephrology consultations, please use the SS Kidney Care numbers above."
+      "label": "24×7 इमरजेंसी",
+      "title": "स्वतंत्र इमरजेंसी पार्टनर",
+      "clarifier": "समय के बाद और तीव्र आपात स्थितियों के लिए। नियमित अपॉइंटमेंट और नेफ्रोलॉजी परामर्श के लिए, कृपया ऊपर दिए SS किडनी केयर नंबरों का उपयोग करें।"
     }
   },
   "form": {
-    "name_label": "Your name",
-    "name_placeholder": "How should we address you?",
-    "email_label": "Email",
-    "email_placeholder": "We'll reply here",
-    "phone_label": "Phone",
+    "name_label": "आपका नाम",
+    "name_placeholder": "हम आपको कैसे संबोधित करें?",
+    "email_label": "ईमेल",
+    "email_placeholder": "हम यहाँ जवाब देंगे",
+    "phone_label": "फ़ोन",
     "phone_placeholder": "+91 12345 67890",
-    "reason_label": "How can we help?",
+    "reason_label": "हम कैसे मदद कर सकते हैं?",
     "reason_options": {
-      "appointment": "I'd like to book an appointment",
-      "second_opinion": "I'd like a second opinion",
-      "general": "General enquiry",
-      "feedback": "Feedback"
+      "appointment": "मैं अपॉइंटमेंट बुक करना चाहता/चाहती हूँ",
+      "second_opinion": "मुझे दूसरी राय चाहिए",
+      "general": "सामान्य पूछताछ",
+      "feedback": "प्रतिक्रिया"
     },
-    "message_label": "Your message",
-    "message_placeholder": "Tell us a little so we can route this to the right person.",
-    "submit": "Send the message",
-    "submitting": "Sending"
+    "message_label": "आपका संदेश",
+    "message_placeholder": "थोड़ा बताइए ताकि हम इसे सही व्यक्ति तक पहुँचा सकें।",
+    "submit": "संदेश भेजें",
+    "submitting": "भेज रहे हैं"
   },
   "success": {
-    "title": "Thanks, {name}.",
-    "body": "We'll get back within 24 hours. A copy has been sent to {email}.",
-    "next_action": "Back to home"
+    "title": "धन्यवाद, {name}।",
+    "body": "हम 24 घंटे के भीतर वापस आएँगे। एक प्रति {email} पर भेजी गई है।",
+    "next_action": "होम पर वापस"
   },
-  "find_us_title": "Find us",
-  "hours_title": "Hours",
-  "emergency_callout": "For emergencies, call our 24×7 line."
+  "find_us_title": "हमें ढूँढ़ें",
+  "hours_title": "समय",
+  "emergency_callout": "आपात स्थिति के लिए, हमारी 24×7 लाइन पर कॉल करें।"
 }

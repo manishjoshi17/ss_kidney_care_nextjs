@@ -80,7 +80,7 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
             <ScrollProgress />
             <Header locale={lang} nav={dictionary.nav} common={dictionary.common} />
             <main id="main" className="flex-1">{children}</main>
-            <Footer locale={lang} nav={dictionary.nav} footer={dictionary.footer} />
+            <Footer locale={lang} nav={dictionary.nav} footer={dictionary.footer} common={dictionary.common} />
             <StickyQuickActions />
           </MotionProvider>
         </TranslationsProvider>

@@ -1,12 +1,12 @@
 {
   "index": {
-    "eyebrow": "Patient resources",
-    "title": "Guides written in plain words",
-    "lead": "Diet, what to expect at your first visit, dialysis basics, insurance pre-auth — clear and practical."
+    "eyebrow": "मरीज़ संसाधन",
+    "title": "सरल शब्दों में लिखे गाइड",
+    "lead": "आहार, पहली मुलाक़ात पर क्या उम्मीद करें, डायलिसिस की बुनियादी बातें, बीमा प्री-ऑथ — स्पष्ट और व्यावहारिक।"
   },
   "detail": {
-    "reading_time": "{minutes} min read",
-    "in_this_guide": "In this guide",
-    "next_read": "What to read next"
+    "reading_time": "{minutes} मिनट का पठन",
+    "in_this_guide": "इस गाइड में",
+    "next_read": "आगे क्या पढ़ें"
   }
 }

@@ -1,16 +1,16 @@
 {
-  "eyebrow": "Gallery",
-  "title": "A look inside",
-  "lead": "Photos from the hospital, the team, and events.",
+  "eyebrow": "गैलरी",
+  "title": "अंदर की झलक",
+  "lead": "अस्पताल, टीम और आयोजनों की तस्वीरें।",
   "categories": {
-    "facility": "Facility",
-    "staff": "Team",
-    "events": "Events",
-    "equipment": "Equipment"
+    "facility": "सुविधा",
+    "staff": "टीम",
+    "events": "आयोजन",
+    "equipment": "उपकरण"
   },
   "lightbox": {
-    "close": "Close",
-    "previous": "Previous photo",
-    "next": "Next photo"
+    "close": "बंद करें",
+    "previous": "पिछली फ़ोटो",
+    "next": "अगली फ़ोटो"
   }
 }

@@ -29,7 +29,6 @@ interface HeroProps {
 }
 
 export function Hero({ locale, home, common }: HeroProps) {
-  void common;
   return (
     <section
       className="relative overflow-hidden bg-gradient-hero with-grain"
@@ -137,10 +136,10 @@ export function Hero({ locale, home, common }: HeroProps) {
                 locale={locale}
                 variant="compact"
                 copy={{
-                  chip_dm: "DM Nephrology",
-                  chip_transplant: "Transplant + Interventional",
-                  chip_vimsar: "VIMSAR Faculty",
-                  chip_research: "Published researcher",
+                  chip_dm: common.doctor_chips.dm,
+                  chip_transplant: common.doctor_chips.transplant,
+                  chip_vimsar: common.doctor_chips.vimsar,
+                  chip_research: common.doctor_chips.research,
                   primary_cta: home.hero.primary_cta,
                   secondary_cta: home.hero.secondary_cta,
                 }}

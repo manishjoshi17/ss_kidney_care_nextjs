@@ -107,7 +107,8 @@
       "Bash(/usr/bin/curl -sf http://localhost:3010/brand/logo-horizontal-reverse.svg -o /dev/null -w \"reverse   %{http_code}\\\\n\")",
       "Bash(/usr/bin/curl -sf http://localhost:3010/brand/logo-horizontal-mono.svg -o /dev/null -w \"mono      %{http_code}\\\\n\")",
       "Bash(/usr/bin/curl -s http://localhost:3010/en/about)",
-      "Bash(curl -o /dev/null -s -w '%{http_code}' '__TRACKED_VAR__?auto=format&fit=crop&w=400&q=80')"
+      "Bash(curl -o /dev/null -s -w '%{http_code}' '__TRACKED_VAR__?auto=format&fit=crop&w=400&q=80')",
+      "Bash(python3 -m json.tool)"
     ],
     "additionalDirectories": [
       "/Volumes/software-development/main_htdocs/active/ss-kidney-care/app/[lang]/_design-system",

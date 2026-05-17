@@ -89,6 +89,12 @@ export function Header({ locale, nav, common }: HeaderProps) {
                 {common.actions.schedule_consultation}
               </Link>
             </Button>
+            <LanguageSwitcher
+              currentLocale={locale}
+              variant="bare"
+              className="sm:hidden"
+              align="end"
+            />
             <MobileMenu locale={locale} nav={nav} common={common} />
           </div>
         </div>

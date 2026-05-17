@@ -1,33 +1,33 @@
 {
   "newsletter": {
-    "title": "Kidney health, in your inbox",
-    "body": "One short note a month. Practical things — diet, when to call us, how to read a test report.",
+    "title": "किडनी स्वास्थ्य — आपके इनबॉक्स में",
+    "body": "महीने में एक छोटा नोट। व्यावहारिक बातें — आहार, हमें कब कॉल करें, टेस्ट रिपोर्ट कैसे पढ़ें।",
     "email_placeholder": "you@example.com",
-    "submit": "Subscribe"
+    "submit": "सब्सक्राइब करें"
   },
   "columns": {
     "brand": {
-      "tagline": "Advanced nephrology — the future of kidney health."
+      "tagline": "उन्नत नेफ्रोलॉजी — किडनी स्वास्थ्य का भविष्य।"
     },
-    "services": "Treatments",
-    "for_patients": "For patients",
-    "hospital": "Clinic",
-    "get_in_touch": "Get in touch"
+    "services": "उपचार",
+    "for_patients": "मरीज़ों के लिए",
+    "hospital": "क्लिनिक",
+    "get_in_touch": "संपर्क करें"
   },
   "get_in_touch": {
-    "address_label": "Address",
-    "phone_label": "Phone",
-    "email_label": "Email",
-    "hours_label": "Hours",
-    "emergency_label": "24×7 emergency"
+    "address_label": "पता",
+    "phone_label": "फ़ोन",
+    "email_label": "ईमेल",
+    "hours_label": "समय",
+    "emergency_label": "24×7 इमरजेंसी"
   },
   "burla": {
-    "label": "Also at",
-    "title": "Burla — VIMSAR consultation point",
-    "disclaimer_short": "Burla listing reflects Dr. Shristi's VIMSAR consultation hours and is not an SS Kidney Care branch."
+    "label": "यहाँ भी",
+    "title": "बुर्ला — VIMSAR परामर्श बिंदु",
+    "disclaimer_short": "बुर्ला लिस्टिंग डॉ. श्रीष्टि के VIMSAR परामर्श घंटों को दर्शाती है — यह SS किडनी केयर की शाखा नहीं है।"
   },
   "bottom_strip": {
-    "copyright": "© {year} SS Kidney Care, Sambalpur. All rights reserved."
+    "copyright": "© {year} SS किडनी केयर, सम्बलपुर। सर्वाधिकार सुरक्षित।"
   },
-  "brand_phrase": "Care that listens."
+  "brand_phrase": "वो देखभाल जो सुनती है।"
 }

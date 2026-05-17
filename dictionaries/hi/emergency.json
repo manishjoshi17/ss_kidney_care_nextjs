@@ -1,17 +1,17 @@
 {
-  "eyebrow": "Emergency",
-  "title": "We're here, 24×7.",
-  "lead": "Call our line. Dr. Basanta Pradhan, MD will answer.",
-  "call_now": "Call now",
-  "disclaimer_title": "About this number",
-  "disclaimer_body": "Dr. Pradhan provides after-hours emergency triage; he is an independent emergency partner physician, not a co-physician of SS Kidney Care. For routine nephrology consultations, please contact Dr. Sourav Shristi directly on the clinic line or via WhatsApp.",
-  "ambulance_title": "Need an ambulance?",
-  "ambulance_body": "Call the emergency line. Our team will dispatch the nearest ambulance and stay on the phone with you.",
-  "before_help_title": "Before help arrives",
+  "eyebrow": "इमरजेंसी",
+  "title": "हम 24×7 यहाँ हैं।",
+  "lead": "हमारी लाइन पर कॉल कीजिए। डॉ. बसंता प्रधान, MD जवाब देंगे।",
+  "call_now": "अभी कॉल करें",
+  "disclaimer_title": "इस नंबर के बारे में",
+  "disclaimer_body": "डॉ. प्रधान समय के बाद की इमरजेंसी देखभाल देते हैं; वे एक स्वतंत्र इमरजेंसी पार्टनर चिकित्सक हैं, SS किडनी केयर के सह-चिकित्सक नहीं। नियमित नेफ्रोलॉजी परामर्श के लिए, कृपया डॉ. सौरव श्रीष्टि से सीधे क्लिनिक लाइन पर या WhatsApp के माध्यम से संपर्क करें।",
+  "ambulance_title": "एम्बुलेंस चाहिए?",
+  "ambulance_body": "इमरजेंसी लाइन पर कॉल करें। हमारी टीम सबसे निकटतम एम्बुलेंस भेजेगी और फ़ोन पर आपके साथ बनी रहेगी।",
+  "before_help_title": "मदद आने तक",
   "before_help": [
-    "Keep the patient calm and seated or lying down.",
-    "Note the time of any symptom — when it started, what it felt like.",
-    "Have current medications and recent reports nearby.",
-    "Unlock the main door so paramedics can enter quickly."
+    "मरीज़ को शांत रखें, बैठाएँ या लेटा दें।",
+    "किसी भी लक्षण का समय नोट करें — कब शुरू हुआ, कैसा महसूस हुआ।",
+    "मौजूदा दवाएँ और हाल की रिपोर्ट पास रखें।",
+    "मुख्य दरवाज़ा खोल रखें ताकि पैरामेडिक्स जल्दी अंदर आ सकें।"
   ]
 }

@@ -1,36 +1,36 @@
 {
   "privacy": {
-    "eyebrow": "Privacy",
-    "title": "Privacy policy",
-    "last_updated_label": "Last updated",
-    "last_updated": "17 May 2026",
+    "eyebrow": "गोपनीयता",
+    "title": "गोपनीयता नीति",
+    "last_updated_label": "अंतिम अपडेट",
+    "last_updated": "17 मई 2026",
     "sections": [
-      { "heading": "What we collect", "body": "Information you provide via our forms — name, email, phone, and the message you send. We do not collect medical history unless you choose to share it with us." },
-      { "heading": "How we use it", "body": "To respond to your enquiry. We do not sell or share your information with third parties for marketing." },
-      { "heading": "Storage", "body": "Form submissions arrive in our team email inbox. They are retained for as long as needed to follow up with you, and deleted on request." },
-      { "heading": "Your rights", "body": "Email us at the address in our footer to request a copy of, or deletion of, any information you have shared." },
-      { "heading": "Contact", "body": "For any privacy question, write to us at the email in the site footer." }
+      { "heading": "हम क्या एकत्र करते हैं", "body": "हमारे फ़ॉर्म के माध्यम से आप जो जानकारी देते हैं — नाम, ईमेल, फ़ोन, और आपका संदेश। हम चिकित्सीय इतिहास तब तक एकत्र नहीं करते जब तक आप ख़ुद साझा न करें।" },
+      { "heading": "हम इसका उपयोग कैसे करते हैं", "body": "आपकी पूछताछ का जवाब देने के लिए। हम मार्केटिंग के लिए आपकी जानकारी तीसरे पक्ष को नहीं बेचते या साझा नहीं करते।" },
+      { "heading": "भंडारण", "body": "फ़ॉर्म सबमिशन हमारी टीम के ईमेल इनबॉक्स में आते हैं। ये जितने समय तक आपसे फ़ॉलो-अप के लिए ज़रूरी हों, रखे जाते हैं — अनुरोध पर हटा दिए जाते हैं।" },
+      { "heading": "आपके अधिकार", "body": "फ़ुटर के ईमेल पते पर हमें लिखकर साझा की गई किसी भी जानकारी की प्रति माँग सकते हैं या उसे हटाने का अनुरोध कर सकते हैं।" },
+      { "heading": "संपर्क", "body": "किसी भी गोपनीयता सवाल के लिए, साइट के फ़ुटर में दिए ईमेल पर हमें लिखें।" }
     ]
   },
   "terms": {
-    "eyebrow": "Terms",
-    "title": "Terms of use",
-    "last_updated_label": "Last updated",
-    "last_updated": "17 May 2026",
+    "eyebrow": "शर्तें",
+    "title": "उपयोग की शर्तें",
+    "last_updated_label": "अंतिम अपडेट",
+    "last_updated": "17 मई 2026",
     "sections": [
-      { "heading": "About this site", "body": "This website is published by SS Kidney Care for general information about the clinic and the services we offer." },
-      { "heading": "No medical advice", "body": "Content here is informational. It does not replace consultation with a qualified clinician. Always confirm with a doctor before acting on anything you read." },
-      { "heading": "Accuracy", "body": "We try to keep everything accurate and up to date. Where information may be out of date, we mention it." },
-      { "heading": "External links", "body": "Where we link to other sites, we don't control their content or claims." }
+      { "heading": "इस साइट के बारे में", "body": "यह वेबसाइट SS किडनी केयर द्वारा क्लिनिक और हमारी सेवाओं के बारे में सामान्य जानकारी के लिए प्रकाशित की गई है।" },
+      { "heading": "कोई चिकित्सीय सलाह नहीं", "body": "यहाँ की सामग्री जानकारी के लिए है। यह योग्य चिकित्सक के परामर्श का विकल्प नहीं है। यहाँ पढ़ी किसी भी बात पर कार्रवाई करने से पहले हमेशा डॉक्टर से पुष्टि करें।" },
+      { "heading": "सटीकता", "body": "हम हर चीज़ को सटीक और अद्यतन रखने की कोशिश करते हैं। जहाँ जानकारी पुरानी हो सकती है, हम बताते हैं।" },
+      { "heading": "बाहरी लिंक", "body": "जहाँ हम अन्य साइटों से लिंक करते हैं, हम उनकी सामग्री या दावों को नियंत्रित नहीं करते।" }
     ]
   },
   "disclaimer": {
-    "eyebrow": "Disclaimer",
-    "title": "Medical disclaimer",
-    "body": "The information on this website is provided for general awareness about kidney health and the services we offer. It is not a substitute for medical advice from a qualified clinician. Treatment plans depend on individual factors only your nephrologist can assess. If you believe you are experiencing a medical emergency, please call our 24×7 line or your local emergency number immediately.",
-    "burla_title": "About the Burla consultation point",
-    "burla_body": "Dr. Sourav Shristi additionally consults at Burla in his capacity as Assistant Professor, Department of Nephrology, VIMSAR (a government medical college hospital). The Burla address listed on this website is the VIMSAR consultation point and is not a branch of SS Kidney Care. For SS Kidney Care services, please visit our Sambalpur clinic.",
-    "emergency_title": "About the 24×7 emergency line",
-    "emergency_body": "Our 24×7 emergency line is staffed by Dr. Basanta Pradhan, MD — an independent emergency partner physician. Dr. Pradhan is not a co-physician of SS Kidney Care and does not provide routine nephrology consultations under SS Kidney Care."
+    "eyebrow": "अस्वीकरण",
+    "title": "चिकित्सा अस्वीकरण",
+    "body": "इस वेबसाइट की जानकारी किडनी स्वास्थ्य और हमारी सेवाओं के बारे में सामान्य जागरूकता के लिए दी गई है। यह योग्य चिकित्सक की सलाह का विकल्प नहीं है। उपचार योजना उन व्यक्तिगत कारकों पर निर्भर है जिनका मूल्यांकन केवल आपके नेफ्रोलॉजिस्ट कर सकते हैं। अगर आपको लगता है कि चिकित्सीय आपात स्थिति है, कृपया तुरंत हमारी 24×7 लाइन या अपने स्थानीय आपातकालीन नंबर पर कॉल करें।",
+    "burla_title": "बुर्ला परामर्श बिंदु के बारे में",
+    "burla_body": "डॉ. सौरव श्रीष्टि अतिरिक्त रूप से बुर्ला में नेफ्रोलॉजी विभाग, VIMSAR (एक सरकारी मेडिकल कॉलेज अस्पताल) के असि. प्रोफ़ेसर के रूप में परामर्श देते हैं। इस वेबसाइट पर सूचीबद्ध बुर्ला का पता VIMSAR परामर्श बिंदु है, यह SS किडनी केयर की शाखा नहीं है। SS किडनी केयर सेवाओं के लिए, कृपया हमारे सम्बलपुर क्लिनिक पर आइए।",
+    "emergency_title": "24×7 इमरजेंसी लाइन के बारे में",
+    "emergency_body": "हमारी 24×7 इमरजेंसी लाइन डॉ. बसंता प्रधान, MD द्वारा संचालित है — एक स्वतंत्र इमरजेंसी पार्टनर चिकित्सक। डॉ. प्रधान SS किडनी केयर के सह-चिकित्सक नहीं हैं और SS किडनी केयर के तहत नियमित नेफ्रोलॉजी परामर्श नहीं देते।"
   }
 }

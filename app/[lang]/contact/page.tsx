@@ -60,6 +60,16 @@ export default async function ContactPage({ params }: PageProps) {
               <address className="not-italic text-body text-foreground-muted mt-4 leading-normal">
                 {site.addressLines.map((l) => <span key={l} className="block">{l}</span>)}
               </address>
+              <a
+                href={site.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1.5 text-small font-medium text-primary-deep hover:underline"
+              >
+                <Icon name="map" size={16} weight="fill" />
+                {dict.common.actions.find_on_map}
+                <Icon name="arrow-up-right" size={14} />
+              </a>
               <div className="mt-5 flex flex-col gap-3 text-small">
                 <ContactRow icon="phone" label={c.blocks.primary.phone_label}>
                   <a href={telHref(site.phoneNumbers.general)} className="text-foreground hover:underline">{site.phoneNumbers.general}</a>
@@ -89,6 +99,16 @@ export default async function ContactPage({ params }: PageProps) {
               <address className="not-italic text-body text-on-cream mt-4 leading-normal">
                 {site.consultationPoint.burla.addressLines.map((l) => <span key={l} className="block">{l}</span>)}
               </address>
+              <a
+                href={site.consultationPoint.burla.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1.5 text-small font-medium text-on-cream hover:underline"
+              >
+                <Icon name="map" size={16} weight="fill" />
+                {dict.common.actions.find_on_map}
+                <Icon name="arrow-up-right" size={14} />
+              </a>
               <div className="mt-5 text-small">
                 <ContactRow icon="phone" label={c.blocks.burla.phone_label} tone="cream">
                   <a href={telHref(site.consultationPoint.burla.phone)} className="text-on-cream hover:underline">{site.consultationPoint.burla.phone}</a>

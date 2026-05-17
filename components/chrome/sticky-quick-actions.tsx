@@ -11,7 +11,6 @@ import { telHref, waHref } from "@/lib/utils";
  */
 export function StickyQuickActions() {
   const { t } = useTranslations();
-  const mapHref = `https://maps.google.com/?q=${site.latLng.lat},${site.latLng.lng}`;
   const items = [
     {
       label: t("common.actions.chat_whatsapp"),
@@ -26,8 +25,8 @@ export function StickyQuickActions() {
       className: "bg-accent text-on-accent",
     },
     {
-      label: t("common.labels.address"),
-      href: mapHref,
+      label: t("common.actions.find_on_map"),
+      href: site.mapsUrl,
       icon: "map" as const,
       className: "bg-primary text-on-primary",
     },

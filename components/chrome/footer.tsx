@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { BeanCurve } from "@/components/icons/bean-curve";
-import { Icon, type IconName } from "@/components/icons/icon";
+import { Icon } from "@/components/icons/icon";
 import { LanguageSwitcher } from "@/components/chrome/language-switcher";
 import { Logo } from "@/components/chrome/logo";
 import { Separator } from "@/components/ui/separator";
@@ -19,18 +19,12 @@ interface FooterProps {
   locale: SupportedLocale;
   nav: Dictionary["nav"];
   footer: Dictionary["footer"];
+  common: Dictionary["common"];
 }
 
-export function Footer({ locale, nav, footer }: FooterProps) {
+export function Footer({ locale, nav, footer, common }: FooterProps) {
   const services = getAllServices().slice(0, 6);
   const year = new Date().getFullYear();
-
-  const socials: { href: string | undefined; icon: IconName; label: string }[] = [
-    { href: site.socials.facebook, icon: "facebook", label: "Facebook" },
-    { href: site.socials.instagram, icon: "instagram", label: "Instagram" },
-    { href: site.socials.linkedin, icon: "linkedin", label: "LinkedIn" },
-    { href: (site.socials as { youtube?: string }).youtube, icon: "youtube", label: "YouTube" },
-  ];
 
   return (
     <Section as="div" surface="navy" spacing="none" className="mt-section">
@@ -50,22 +44,6 @@ export function Footer({ locale, nav, footer }: FooterProps) {
                 </li>
               ))}
             </ul>
-            <div className="flex items-center gap-3">
-              {socials.map((s) =>
-                s.href ? (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    aria-label={s.label}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="size-10 inline-flex items-center justify-center rounded-full border border-on-navy/15 text-on-navy hover:bg-on-navy/10 transition-colors"
-                  >
-                    <Icon name={s.icon} size={18} weight="regular" />
-                  </a>
-                ) : null,
-              )}
-            </div>
           </div>
 
           {/* Services column */}
@@ -119,6 +97,16 @@ export function Footer({ locale, nav, footer }: FooterProps) {
                     <span key={line} className="block">{line}</span>
                   ))}
                 </address>
+                <a
+                  href={site.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-1.5 text-tiny font-medium text-on-navy/85 hover:text-on-navy hover:underline"
+                >
+                  <Icon name="map" size={14} weight="fill" />
+                  {common.actions.find_on_map}
+                  <Icon name="arrow-up-right" size={12} />
+                </a>
               </li>
               <li>
                 <p className="text-on-navy/60 text-tiny uppercase tracking-wide mb-1">{footer.get_in_touch.phone_label}</p>
@@ -162,12 +150,24 @@ export function Footer({ locale, nav, footer }: FooterProps) {
                   <span key={line} className="block">{line}</span>
                 ))}
               </address>
-              <a
-                href={telHref(site.consultationPoint.burla.phone)}
-                className="text-small text-on-navy/85 hover:text-on-navy hover:underline mt-1 inline-block"
-              >
-                {site.consultationPoint.burla.phone}
-              </a>
+              <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1">
+                <a
+                  href={telHref(site.consultationPoint.burla.phone)}
+                  className="text-small text-on-navy/85 hover:text-on-navy hover:underline"
+                >
+                  {site.consultationPoint.burla.phone}
+                </a>
+                <a
+                  href={site.consultationPoint.burla.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-tiny font-medium text-on-navy/85 hover:text-on-navy hover:underline"
+                >
+                  <Icon name="map" size={14} weight="fill" />
+                  {common.actions.find_on_map}
+                  <Icon name="arrow-up-right" size={12} />
+                </a>
+              </div>
             </div>
             <p className="text-tiny text-on-navy/65 max-w-[42ch]">
               {footer.burla.disclaimer_short}

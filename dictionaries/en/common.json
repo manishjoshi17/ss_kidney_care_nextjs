@@ -17,7 +17,8 @@
     "chat_whatsapp": "Chat on WhatsApp",
     "view_all": "View all",
     "back_to_home": "Back to home",
-    "try_again": "Try again"
+    "try_again": "Try again",
+    "find_on_map": "Find on map"
   },
   "labels": {
     "open_menu": "Open menu",
@@ -30,5 +31,11 @@
     "emergency": "Emergency",
     "loading": "Loading"
   },
-  "scroll_cue": "Scroll to read more"
+  "scroll_cue": "Scroll to read more",
+  "doctor_chips": {
+    "dm": "DM Nephrology",
+    "transplant": "Transplant + Interventional",
+    "vimsar": "VIMSAR Faculty",
+    "research": "Published researcher"
+  }
 }

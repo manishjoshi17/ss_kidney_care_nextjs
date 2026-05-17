@@ -1,14 +1,14 @@
 {
-  "eyebrow": "Remote consultations",
-  "title": "Out of Sambalpur? Send your reports.",
-  "lead": "If you live elsewhere in Odisha — or anywhere we can't see you in person — WhatsApp Dr. Shristi with a photo of your reports and a brief note. He writes back within 24 hours with a sense of whether you need a visit, more tests, or just a follow-up call.",
-  "what_we_handle_title": "What works remotely",
+  "eyebrow": "रिमोट परामर्श",
+  "title": "सम्बलपुर से बाहर हैं? अपनी रिपोर्ट भेजिए।",
+  "lead": "अगर आप ओडिशा में कहीं और रहते हैं — या ऐसी जगह जहाँ हम व्यक्तिगत रूप से नहीं देख सकते — डॉ. श्रीष्टि को अपनी रिपोर्ट की फ़ोटो और एक संक्षिप्त नोट के साथ WhatsApp कीजिए। वे 24 घंटे के भीतर जवाब देंगे — बताएँगे कि आपको आना चाहिए, और जाँचें चाहिए, या सिर्फ़ फ़ोन पर फ़ॉलो-अप काफ़ी है।",
+  "what_we_handle_title": "रिमोट क्या काम करता है",
   "what_we_handle": [
-    { "name": "First review of reports", "body": "Send your blood, urine, BP records, and any prior imaging. You'll get a plain-language read-back and a recommendation." },
-    { "name": "Follow-up between visits", "body": "Once you're under our care, routine follow-ups — new lab results, medication adjustments, BP/sugar tracking — work over WhatsApp." },
-    { "name": "Second opinions", "body": "Send what you've been told and the reports it's based on. Dr. Shristi reads them carefully before responding." },
-    { "name": "Coordination with your local doctor", "body": "We're happy to coordinate with your local physician — share the contact and we'll reach out." }
+    { "name": "रिपोर्ट की पहली समीक्षा", "body": "अपना ब्लड, यूरिन, BP रिकॉर्ड और कोई पहले की इमेजिंग भेजिए। आपको सरल भाषा में समीक्षा और सिफ़ारिश मिलेगी।" },
+    { "name": "विज़िट के बीच फ़ॉलो-अप", "body": "एक बार हमारी देखभाल में आ जाने पर, नियमित फ़ॉलो-अप — नए लैब परिणाम, दवा समायोजन, BP/शुगर ट्रैकिंग — WhatsApp पर काम करते हैं।" },
+    { "name": "दूसरी राय", "body": "जो आपको बताया गया है वो और उससे जुड़ी रिपोर्ट भेजिए। डॉ. श्रीष्टि जवाब देने से पहले उन्हें ध्यान से पढ़ते हैं।" },
+    { "name": "अपने स्थानीय डॉक्टर के साथ समन्वय", "body": "हम आपके स्थानीय चिकित्सक के साथ समन्वय करने में ख़ुशी से सहयोग करते हैं — संपर्क साझा कीजिए, हम पहुँच करेंगे।" }
   ],
-  "languages_title": "Languages we consult in",
-  "contact_coordinator": "WhatsApp Dr. Shristi"
+  "languages_title": "जिन भाषाओं में हम परामर्श देते हैं",
+  "contact_coordinator": "डॉ. श्रीष्टि को WhatsApp करें"
 }

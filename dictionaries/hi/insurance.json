@@ -1,16 +1,16 @@
 {
-  "eyebrow": "Insurance & TPA",
-  "title": "Check if we're empanelled",
-  "lead": "We work with most major insurers and TPAs. If yours isn't listed, talk to billing and we'll see what can be done.",
-  "insurers_title": "Insurers we work with",
-  "tpa_title": "TPAs we coordinate with",
+  "eyebrow": "बीमा और TPA",
+  "title": "देखिए कि क्या हम इम्पैनल्ड हैं",
+  "lead": "हम अधिकांश बड़ी बीमा कंपनियों और TPA के साथ काम करते हैं। अगर आपकी सूची में नहीं है, बिलिंग से बात कीजिए — हम देखेंगे क्या किया जा सकता है।",
+  "insurers_title": "हम जिन बीमा कंपनियों के साथ काम करते हैं",
+  "tpa_title": "हम जिन TPA के साथ समन्वय करते हैं",
   "cashless_strip": {
-    "title": "How cashless treatment works here",
+    "title": "यहाँ कैशलेस इलाज कैसे काम करता है",
     "steps": [
-      "Carry your insurance card and a photo ID on the visit.",
-      "Our billing team will raise the pre-authorisation request the same day.",
-      "Once approved, you focus on treatment — we handle the paperwork."
+      "मुलाक़ात पर अपना बीमा कार्ड और फ़ोटो ID साथ लाएँ।",
+      "हमारी बिलिंग टीम उसी दिन प्री-ऑथराइज़ेशन का अनुरोध भेजेगी।",
+      "मंज़ूरी मिलते ही, आप इलाज पर ध्यान दीजिए — काग़ज़ी कार्रवाई हम संभालेंगे।"
     ]
   },
-  "contact_billing": "Talk to billing"
+  "contact_billing": "बिलिंग से बात करें"
 }

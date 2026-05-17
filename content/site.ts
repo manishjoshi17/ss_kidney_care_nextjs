@@ -8,14 +8,6 @@ export interface SiteHours {
   sunday: string;
 }
 
-export interface SiteSocials {
-  facebook?: string;
-  instagram?: string;
-  linkedin?: string;
-  youtube?: string;
-  whatsapp?: string;
-}
-
 export interface SiteAccreditation {
   name: string;
   short: string;
@@ -24,6 +16,8 @@ export interface SiteAccreditation {
 export interface SiteConsultationPoint {
   addressLines: string[];
   phone: string;
+  /** Google Maps URL — short link (preferred) or Maps search URL fallback. */
+  mapsUrl: string;
   /** Disclaimer rendered with the address. Plan §7 short form. */
   disclaimer: TranslatedString;
   /** Disclaimer rendered in the Contact-page secondary block. Plan §7 full form. */
@@ -58,6 +52,8 @@ export const site = {
     "Sambalpur, Odisha 768004",
     "India",
   ],
+  /** Google Maps short link to the Sambalpur clinic pin. */
+  mapsUrl: "https://maps.app.goo.gl/2E8SQRkbZqzDyJBZ8",
   /** Sambalpur, Odisha (approx). */
   latLng: { lat: 21.4669, lng: 83.9812 },
   phoneNumbers: {
@@ -83,11 +79,6 @@ export const site = {
     saturday: "8:00 AM – 10:00 AM",
     sunday: "Emergency only — 24×7 line",
   } satisfies SiteHours,
-  socials: {
-    facebook: "https://facebook.com/sskidneycare",
-    instagram: "https://instagram.com/sskidneycare",
-    linkedin: "https://in.linkedin.com/in/sourav-shristi-8a447b20",
-  } satisfies SiteSocials,
   accreditations: [
     { name: "Indian Medical Association — registered facility", short: "IMA" },
     { name: "VIMSAR Department of Nephrology affiliation (Asst. Professor)", short: "VIMSAR" },
@@ -111,6 +102,8 @@ export const site = {
         "Sambalpur district, Odisha",
       ],
       phone: "+91 79787 69447",
+      // TODO supply Maps short-link for Burla VIMSAR consultation point; using a search URL until then
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Sri+Ram+Vihar+Near+St+Luke+School+Burla+Sambalpur+Odisha",
       disclaimer: {
         en: "Burla listing reflects Dr. Shristi's VIMSAR consultation hours and is not an SS Kidney Care branch.",
         hi: "बुर्ला सूची डॉ. श्रीस्टी के VIMSAR परामर्श घंटों को दर्शाती है और यह SS Kidney Care की शाखा नहीं है।",

@@ -1,34 +1,34 @@
 {
-  "eyebrow": "Appointment",
-  "title": "Book a consultation with Dr. Shristi",
-  "lead": "Fastest path: WhatsApp Dr. Shristi with a photo of your reports. The form below works too — we'll call you back within 24 hours.",
+  "eyebrow": "अपॉइंटमेंट",
+  "title": "डॉ. श्रीष्टि के साथ परामर्श बुक करें",
+  "lead": "सबसे तेज़ रास्ता: अपनी रिपोर्ट की फ़ोटो के साथ डॉ. श्रीष्टि को WhatsApp करें। नीचे का फ़ॉर्म भी काम करता है — हम 24 घंटे के भीतर आपको कॉल करेंगे।",
   "whatsapp_block": {
-    "title": "WhatsApp Dr. Shristi",
-    "body": "Send a photo of your reports and a short note about what's going on. He writes back within 24 hours.",
-    "cta": "Open WhatsApp",
-    "prefill": "Hello, I'd like to book an appointment at SS Kidney Care. I'm sending my reports here."
+    "title": "डॉ. श्रीष्टि को WhatsApp करें",
+    "body": "अपनी रिपोर्ट की एक फ़ोटो और जो हो रहा है उसका एक छोटा नोट भेजिए। वे 24 घंटे के भीतर जवाब देते हैं।",
+    "cta": "WhatsApp खोलें",
+    "prefill": "नमस्ते, मैं SS किडनी केयर में अपॉइंटमेंट बुक करना चाहता/चाहती हूँ। मैं अपनी रिपोर्ट यहाँ भेज रहा/रही हूँ।"
   },
-  "or_use_form": "Or fill the form below",
-  "opd_timings_note": "OPD: 8–10 AM and 6–9 PM (Sambalpur clinic). Saturday morning only.",
+  "or_use_form": "या नीचे का फ़ॉर्म भरें",
+  "opd_timings_note": "OPD: सुबह 8–10 बजे और शाम 6–9 बजे (सम्बलपुर क्लिनिक)। शनिवार केवल सुबह।",
   "form": {
-    "name_label": "Your name",
-    "name_placeholder": "How should we address you?",
-    "email_label": "Email",
-    "email_placeholder": "We'll send a confirmation here",
-    "phone_label": "Phone",
+    "name_label": "आपका नाम",
+    "name_placeholder": "हम आपको कैसे संबोधित करें?",
+    "email_label": "ईमेल",
+    "email_placeholder": "हम पुष्टि यहाँ भेजेंगे",
+    "phone_label": "फ़ोन",
     "phone_placeholder": "+91 12345 67890",
-    "preferred_doctor_label": "Preferred slot (optional)",
-    "preferred_doctor_placeholder": "Morning OPD or evening OPD",
-    "preferred_time_label": "Comfortable time to call",
-    "preferred_time_placeholder": "Mornings / afternoons / a specific window",
-    "message_label": "Anything we should know",
-    "message_placeholder": "Existing reports, ongoing treatment, what's worrying you — whatever helps us prepare.",
-    "submit": "Schedule the visit",
-    "submitting": "Sending"
+    "preferred_doctor_label": "पसंदीदा स्लॉट (वैकल्पिक)",
+    "preferred_doctor_placeholder": "सुबह की OPD या शाम की OPD",
+    "preferred_time_label": "कॉल के लिए सुविधाजनक समय",
+    "preferred_time_placeholder": "सुबह / दोपहर / कोई विशेष विंडो",
+    "message_label": "जो हमें पता होना चाहिए",
+    "message_placeholder": "मौजूदा रिपोर्ट, चल रहा इलाज, आपकी चिंताएँ — जो भी हमें तैयारी में मदद करे।",
+    "submit": "मुलाक़ात तय करें",
+    "submitting": "भेज रहे हैं"
   },
   "success": {
-    "title": "Thanks, {name}.",
-    "body": "We'll call you within 24 hours. A confirmation is on its way to {email}.",
-    "next_action": "Back to home"
+    "title": "धन्यवाद, {name}।",
+    "body": "हम 24 घंटे के भीतर आपको कॉल करेंगे। एक पुष्टि {email} पर भेजी जा रही है।",
+    "next_action": "होम पर वापस"
   }
 }

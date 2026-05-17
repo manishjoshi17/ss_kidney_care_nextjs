@@ -23,6 +23,8 @@ interface LanguageSwitcherProps {
   size?: "default" | "large";
   /** Use when the trigger sits on a dark surface (e.g. the navy footer). */
   tone?: "default" | "onDark";
+  /** `bare` removes the border + caret, sized to match a 44px icon button (mobile header). */
+  variant?: "default" | "bare";
   align?: "start" | "center" | "end";
   side?: "top" | "bottom";
 }
@@ -44,6 +46,7 @@ export function LanguageSwitcher({
   className,
   size = "default",
   tone = "default",
+  variant = "default",
   align = "end",
   side = "bottom",
 }: LanguageSwitcherProps) {
@@ -66,43 +69,53 @@ export function LanguageSwitcher({
 
   const isLarge = size === "large";
   const isOnDark = tone === "onDark";
+  const isBare = variant === "bare";
 
   return (
     <Popover.Root open={open} onOpenChange={setOpen}>
       <Popover.Trigger
         aria-label={t("common.language_switcher.label")}
         className={cn(
-          "group inline-flex items-center gap-2 rounded-[var(--radius-pill)] font-medium",
-          "border transition-colors duration-[var(--duration-fast)] ease-[var(--ease-out-snap)]",
+          "group inline-flex items-center font-medium",
+          "transition-colors duration-[var(--duration-fast)] ease-[var(--ease-out-snap)]",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-          isLarge ? "h-12 px-4 text-small" : "h-9 px-3 text-tiny",
-          isOnDark
-            ? cn(
-                "border-on-navy/20 text-on-navy",
-                "hover:border-on-navy/40 hover:bg-on-navy/10",
-                "data-[state=open]:border-on-navy/50 data-[state=open]:bg-on-navy/10",
-                "focus-visible:ring-offset-surface-navy",
-              )
+          isBare
+            ? "size-11 justify-center gap-1.5 rounded-full text-tiny text-foreground hover:bg-muted data-[state=open]:bg-muted"
             : cn(
-                "border-border bg-surface text-foreground",
-                "hover:border-border-strong hover:bg-muted",
-                "data-[state=open]:border-primary data-[state=open]:bg-primary-soft data-[state=open]:text-primary-deep",
+                "gap-2 rounded-[var(--radius-pill)] border",
+                isLarge ? "h-12 px-4 text-small" : "h-9 px-3 text-tiny",
+                isOnDark
+                  ? cn(
+                      "border-on-navy/20 text-on-navy",
+                      "hover:border-on-navy/40 hover:bg-on-navy/10",
+                      "data-[state=open]:border-on-navy/50 data-[state=open]:bg-on-navy/10",
+                      "focus-visible:ring-offset-surface-navy",
+                    )
+                  : cn(
+                      "border-border bg-surface text-foreground",
+                      "hover:border-border-strong hover:bg-muted",
+                      "data-[state=open]:border-primary data-[state=open]:bg-primary-soft data-[state=open]:text-primary-deep",
+                    ),
               ),
           className,
         )}
       >
-        <Icon name="translate" size={isLarge ? 18 : 16} weight="regular" />
-        <span className="font-semibold tracking-wide">
-          {isLarge ? NATIVE_NAMES[currentLocale] : SHORT_CODES[currentLocale]}
-        </span>
-        <Icon
-          name="caret-down"
-          size={isLarge ? 14 : 12}
-          className={cn(
-            "opacity-70 transition-transform duration-[var(--duration-fast)] ease-[var(--ease-out-snap)]",
-            "group-data-[state=open]:rotate-180",
-          )}
-        />
+        <Icon name="translate" size={isBare ? 20 : isLarge ? 18 : 16} weight="regular" />
+        {!isBare ? (
+          <span className="font-semibold tracking-wide">
+            {isLarge ? NATIVE_NAMES[currentLocale] : SHORT_CODES[currentLocale]}
+          </span>
+        ) : null}
+        {!isBare ? (
+          <Icon
+            name="caret-down"
+            size={isLarge ? 14 : 12}
+            className={cn(
+              "opacity-70 transition-transform duration-[var(--duration-fast)] ease-[var(--ease-out-snap)]",
+              "group-data-[state=open]:rotate-180",
+            )}
+          />
+        ) : null}
       </Popover.Trigger>
 
       <Popover.Portal>

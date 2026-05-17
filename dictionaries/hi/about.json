@@ -1,16 +1,16 @@
 {
-  "eyebrow": "About us",
-  "title": "A focused nephrology practice, built around the patients of western Odisha.",
-  "lead": "SS Kidney Care opened in Sambalpur in 2023 with a simple idea — that advanced kidney care should be specialist-led, locally available, and honestly explained. Dr. Sourav Shristi runs it as a full-time clinic practice alongside his role as Asst. Professor in the Department of Nephrology, VIMSAR Burla.",
-  "vimsar_paragraph": "Dr. Shristi's academic role at VIMSAR — where he teaches the next generation of nephrologists alongside his clinic practice — keeps the standard of care here in step with what's taught at a government medical college. It also gives him direct access to a renal-pathology partnership for kidney biopsies, and to the regional research community studying the kidney problems specific to the Hirakud agricultural belt.",
-  "how_we_practice_title": "How we practice",
+  "eyebrow": "हमारे बारे में",
+  "title": "एक केंद्रित नेफ्रोलॉजी क्लिनिक — पश्चिमी ओडिशा के मरीज़ों के इर्द-गिर्द बना।",
+  "lead": "SS किडनी केयर 2023 में सम्बलपुर में एक सीधी सोच के साथ खुला — कि उन्नत किडनी देखभाल विशेषज्ञ-नेतृत्व वाली हो, स्थानीय रूप से उपलब्ध हो, और ईमानदारी से समझाई जाए। डॉ. सौरव श्रीष्टि इसे एक पूर्णकालिक क्लिनिक प्रैक्टिस के रूप में चलाते हैं, साथ ही VIMSAR बुर्ला के नेफ्रोलॉजी विभाग में असि. प्रोफ़ेसर भी हैं।",
+  "vimsar_paragraph": "डॉ. श्रीष्टि की VIMSAR में शैक्षणिक भूमिका — जहाँ वे अपनी क्लिनिक प्रैक्टिस के साथ-साथ नेफ्रोलॉजिस्ट की अगली पीढ़ी को पढ़ाते हैं — यहाँ की देखभाल के स्तर को एक सरकारी मेडिकल कॉलेज में पढ़ाए जाने वाले मानक के बराबर रखती है। यह उन्हें किडनी बायोप्सी के लिए रीनल-पैथोलॉजी साझेदारी तक सीधी पहुँच भी देती है, और हीराकुद कृषि-बेल्ट की किडनी समस्याओं का अध्ययन कर रहे क्षेत्रीय शोध समुदाय तक भी।",
+  "how_we_practice_title": "हम कैसे काम करते हैं",
   "how_we_practice": [
-    { "name": "Thirty-minute first consults", "body": "We sit with you, look at your reports, and walk through what's actually happening — in the time it takes to do that properly." },
-    { "name": "Plain Odia or Hindi at home", "body": "If your family speaks Odia or Hindi at home, that's the language we use to explain the diagnosis and the plan. English is offered, not assumed." },
-    { "name": "No upsell", "body": "If you don't need a procedure, we'll tell you. If a particular test would change the plan, we'll explain why before we order it." },
-    { "name": "Wednesday follow-up calls", "body": "When we start a new medication or change a dose, you can expect a call from us on the next Wednesday to ask how it's settling in." },
-    { "name": "Second opinions welcome", "body": "Even when our answer matches the first opinion, we'll explain why so you leave with the picture, not just the verdict." },
-    { "name": "Multi-organ workup", "body": "Kidney problems rarely live alone. We assess the kidney alongside heart, diabetes and BP — under one consultation, not three referrals." }
+    { "name": "तीस-मिनट का पहला परामर्श", "body": "हम आपके साथ बैठते हैं, आपकी रिपोर्ट देखते हैं, और बताते हैं कि वास्तव में क्या हो रहा है — जितना समय इसे ठीक से करने में लगे, उतना।" },
+    { "name": "घर पर सरल ओडिया या हिंदी", "body": "अगर आपका परिवार घर पर ओडिया या हिंदी बोलता है, तो हम उसी भाषा में निदान और योजना समझाते हैं। अंग्रेज़ी हम पेश करते हैं, मान नहीं लेते।" },
+    { "name": "कोई अपसेल नहीं", "body": "अगर आपको किसी प्रक्रिया की ज़रूरत नहीं, तो हम बता देंगे। अगर कोई विशेष जाँच योजना बदलेगी, तो आदेश देने से पहले समझाएँगे क्यों।" },
+    { "name": "बुधवार के फ़ॉलो-अप कॉल", "body": "जब हम नई दवा शुरू करते हैं या डोज़ बदलते हैं, तो आप अगले बुधवार हमारी ओर से एक कॉल की उम्मीद कर सकते हैं — यह जानने के लिए कि वह कैसी रास आ रही है।" },
+    { "name": "दूसरी राय का स्वागत", "body": "जब हमारा जवाब पहली राय से मेल भी खाता है, हम बताएँगे क्यों — ताकि आप सिर्फ़ फ़ैसला नहीं, पूरी तस्वीर लेकर जाएँ।" },
+    { "name": "बहु-अंग वर्कअप", "body": "किडनी की समस्याएँ शायद ही अकेली रहती हैं। हम किडनी का मूल्यांकन हृदय, डायबिटीज़ और BP के साथ करते हैं — एक परामर्श में, तीन रेफ़रल में नहीं।" }
   ],
-  "accreditations_title": "Recognition & affiliations"
+  "accreditations_title": "मान्यताएँ और संबद्धताएँ"
 }

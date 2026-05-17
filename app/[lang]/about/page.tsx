@@ -71,10 +71,10 @@ export default async function AboutPage({ params }: PageProps) {
               locale={lang}
               variant="full"
               copy={{
-                chip_dm: "DM Nephrology",
-                chip_transplant: "Transplant + Interventional",
-                chip_vimsar: "VIMSAR Faculty",
-                chip_research: "Published researcher",
+                chip_dm: dict.common.doctor_chips.dm,
+                chip_transplant: dict.common.doctor_chips.transplant,
+                chip_vimsar: dict.common.doctor_chips.vimsar,
+                chip_research: dict.common.doctor_chips.research,
                 primary_cta: dict.home.hero.primary_cta,
                 secondary_cta: dict.home.hero.secondary_cta,
               }}

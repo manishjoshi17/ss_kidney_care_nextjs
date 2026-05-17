@@ -1,76 +1,76 @@
 {
   "home": {
-    "title": "Dr. Sourav Shristi — Consultant Nephrologist & Transplant Physician, Sambalpur",
-    "description": "DM Nephrology · Asst. Professor at VIMSAR Burla · 4.9 on JustDial. SS Kidney Care: dialysis, CKD management, transplant workup and the kind of explanation a worried family actually deserves."
+    "title": "डॉ. सौरव श्रीष्टि — कंसल्टेंट नेफ्रोलॉजिस्ट और ट्रांसप्लांट फ़िज़िशियन, सम्बलपुर",
+    "description": "DM नेफ्रोलॉजी · VIMSAR बुर्ला में असि. प्रोफ़ेसर · JustDial पर 4.9। SS किडनी केयर: डायलिसिस, CKD प्रबंधन, ट्रांसप्लांट वर्कअप — और वैसी समझ जो एक चिंतित परिवार को सच में चाहिए।"
   },
   "about": {
-    "title": "About — SS Kidney Care",
-    "description": "Founded in 2023 in Sambalpur. Run by Dr. Sourav Shristi — DM Nephrology, Asst. Professor at VIMSAR Burla, published researcher on regional CKD."
+    "title": "हमारे बारे में — SS किडनी केयर",
+    "description": "2023 में सम्बलपुर में स्थापित। डॉ. सौरव श्रीष्टि द्वारा संचालित — DM नेफ्रोलॉजी, VIMSAR बुर्ला में असि. प्रोफ़ेसर, क्षेत्रीय CKD पर प्रकाशित शोधकर्ता।"
   },
   "services": {
     "index": {
-      "title": "Treatments — SS Kidney Care",
-      "description": "CKD management, dialysis, diabetic kidney disease, kidney biopsy, transplant workup, critical-care nephrology — all under Dr. Sourav Shristi."
+      "title": "उपचार — SS किडनी केयर",
+      "description": "CKD प्रबंधन, डायलिसिस, डायबेटिक किडनी रोग, किडनी बायोप्सी, ट्रांसप्लांट वर्कअप, क्रिटिकल-केयर नेफ्रोलॉजी — सब डॉ. सौरव श्रीष्टि के अधीन।"
     }
   },
   "doctors": {
     "index": {
-      "title": "Dr. Sourav Shristi — SS Kidney Care",
-      "description": "Consultant Nephrologist, Transplant Physician & Interventional Nephrologist. DM Nephrology, Asst. Professor at VIMSAR Burla."
+      "title": "डॉ. सौरव श्रीष्टि — SS किडनी केयर",
+      "description": "कंसल्टेंट नेफ्रोलॉजिस्ट, ट्रांसप्लांट फ़िज़िशियन और इंटरवेंशनल नेफ्रोलॉजिस्ट। DM नेफ्रोलॉजी, VIMSAR बुर्ला में असि. प्रोफ़ेसर।"
     }
   },
   "facilities": {
-    "title": "Facilities — SS Kidney Care",
-    "description": "Six-machine dialysis floor, renal ICU, in-house biochemistry lab, and a 24×7 ambulance service in Sambalpur."
+    "title": "सुविधाएँ — SS किडनी केयर",
+    "description": "छह-मशीन डायलिसिस फ़्लोर, रीनल आईसीयू, इन-हाउस बायोकेमिस्ट्री लैब, और सम्बलपुर में 24×7 एम्बुलेंस सेवा।"
   },
   "gallery": {
-    "title": "Gallery — SS Kidney Care",
-    "description": "Inside the clinic at SS Kidney Care, Sambalpur."
+    "title": "गैलरी — SS किडनी केयर",
+    "description": "SS किडनी केयर, सम्बलपुर के अंदर की झलकियाँ।"
   },
   "testimonials": {
-    "title": "Patient stories — SS Kidney Care",
-    "description": "Stories from the families Dr. Shristi has cared for."
+    "title": "मरीज़ों की कहानियाँ — SS किडनी केयर",
+    "description": "डॉ. श्रीष्टि ने जिन परिवारों की देखभाल की, उनकी कहानियाँ।"
   },
   "resources": {
     "index": {
-      "title": "Patient resources — SS Kidney Care",
-      "description": "Plain-language guides on dialysis, CKD, kidney-friendly diet, and what to expect at each step."
+      "title": "मरीज़ संसाधन — SS किडनी केयर",
+      "description": "डायलिसिस, CKD, किडनी-अनुकूल आहार पर सरल-भाषा गाइड, और हर चरण पर क्या उम्मीद करें।"
     }
   },
   "insurance": {
-    "title": "Insurance & TPA — SS Kidney Care",
-    "description": "The insurance and TPA partners we work with, and how cashless treatment works at the clinic."
+    "title": "बीमा और TPA — SS किडनी केयर",
+    "description": "जिन बीमा और TPA साझेदारों के साथ हम काम करते हैं, और क्लिनिक में कैशलेस इलाज कैसे काम करता है।"
   },
   "international_patients": {
-    "title": "Remote consultations — SS Kidney Care",
-    "description": "Out of Sambalpur? Send your reports on WhatsApp; Dr. Shristi writes back within 24 hours."
+    "title": "रिमोट परामर्श — SS किडनी केयर",
+    "description": "सम्बलपुर से बाहर हैं? WhatsApp पर अपनी रिपोर्ट भेजें; डॉ. श्रीष्टि 24 घंटे के भीतर जवाब देंगे — बताएँगे कि आपको आना चाहिए, और जाँचें चाहिए, या सिर्फ़ फ़ोन पर फ़ॉलो-अप काफ़ी है।"
   },
   "appointment": {
-    "title": "Book an appointment — SS Kidney Care",
-    "description": "WhatsApp Dr. Shristi to send your reports, or call the clinic. We'll get back within 24 hours."
+    "title": "अपॉइंटमेंट बुक करें — SS किडनी केयर",
+    "description": "अपनी रिपोर्ट भेजने के लिए डॉ. श्रीष्टि को WhatsApp करें, या क्लिनिक पर कॉल करें। हम 24 घंटे के भीतर जवाब देंगे।"
   },
   "contact": {
-    "title": "Contact — SS Kidney Care",
-    "description": "Address, phones, hours, and how to reach Dr. Shristi."
+    "title": "संपर्क — SS किडनी केयर",
+    "description": "पता, फ़ोन, समय, और डॉ. श्रीष्टि तक कैसे पहुँचें। सम्बलपुर प्राथमिक क्लिनिक + बुर्ला VIMSAR परामर्श बिंदु + 24×7 इमरजेंसी पार्टनर।"
   },
   "emergency": {
-    "title": "24×7 Emergency — SS Kidney Care",
-    "description": "Our 24×7 emergency line is staffed by Dr. Basanta Pradhan, MD — an independent emergency partner physician."
+    "title": "24×7 इमरजेंसी — SS किडनी केयर",
+    "description": "हमारी 24×7 इमरजेंसी लाइन डॉ. बसंता प्रधान, MD द्वारा चलाई जाती है — एक स्वतंत्र इमरजेंसी पार्टनर चिकित्सक।"
   },
   "careers": {
-    "title": "Careers — SS Kidney Care",
-    "description": "Open roles, what we look for, and how to apply."
+    "title": "करियर — SS किडनी केयर",
+    "description": "खुले पद, हम क्या ढूँढ़ते हैं, और आवेदन कैसे करें।"
   },
   "privacy": {
-    "title": "Privacy policy — SS Kidney Care",
-    "description": "How we collect, use, and protect your information."
+    "title": "गोपनीयता नीति — SS किडनी केयर",
+    "description": "हम आपकी जानकारी कैसे एकत्र, उपयोग और सुरक्षित रखते हैं।"
   },
   "terms": {
-    "title": "Terms of use — SS Kidney Care",
-    "description": "The terms that apply when you use this website."
+    "title": "उपयोग की शर्तें — SS किडनी केयर",
+    "description": "जब आप इस वेबसाइट का उपयोग करते हैं तो लागू होने वाली शर्तें।"
   },
   "disclaimer": {
-    "title": "Medical disclaimer — SS Kidney Care",
-    "description": "Important information about the medical content on this site, and the Burla VIMSAR consultation point."
+    "title": "चिकित्सा अस्वीकरण — SS किडनी केयर",
+    "description": "इस साइट की चिकित्सीय सामग्री और बुर्ला VIMSAR परामर्श बिंदु के बारे में महत्वपूर्ण जानकारी।"
   }
 }

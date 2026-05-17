@@ -1,25 +1,25 @@
 {
   "index": {
-    "eyebrow": "Your nephrologist",
-    "title": "Meet Dr. Sourav Shristi",
-    "lead": "Consultant Nephrologist, Transplant Physician & Interventional Nephrologist. DM Nephrology; Asst. Professor at VIMSAR Burla; published researcher on the kidney problems specific to western Odisha."
+    "eyebrow": "आपके नेफ्रोलॉजिस्ट",
+    "title": "डॉ. सौरव श्रीष्टि से मिलिए",
+    "lead": "कंसल्टेंट नेफ्रोलॉजिस्ट, ट्रांसप्लांट फ़िज़िशियन और इंटरवेंशनल नेफ्रोलॉजिस्ट। DM नेफ्रोलॉजी; VIMSAR बुर्ला में असि. प्रोफ़ेसर; पश्चिमी ओडिशा की किडनी समस्याओं पर प्रकाशित शोधकर्ता।"
   },
   "detail": {
-    "at_a_glance": "At a glance",
-    "experience": "Years of experience",
-    "specialties": "Areas of focus",
-    "languages": "Languages spoken",
-    "availability": "OPD on",
-    "patient_stories": "Patient stories",
-    "see_other": "Read patient stories",
+    "at_a_glance": "एक नज़र में",
+    "experience": "अनुभव के साल",
+    "specialties": "विशेष क्षेत्र",
+    "languages": "भाषाएँ",
+    "availability": "OPD दिन",
+    "patient_stories": "मरीज़ों की कहानियाँ",
+    "see_other": "मरीज़ों की कहानियाँ पढ़ें",
     "day_names": {
-      "mon": "Mon",
-      "tue": "Tue",
-      "wed": "Wed",
-      "thu": "Thu",
-      "fri": "Fri",
-      "sat": "Sat",
-      "sun": "Sun"
+      "mon": "सोम",
+      "tue": "मंगल",
+      "wed": "बुध",
+      "thu": "गुरु",
+      "fri": "शुक्र",
+      "sat": "शनि",
+      "sun": "रवि"
     }
   }
 }

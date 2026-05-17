@@ -1,16 +1,16 @@
 {
-  "eyebrow": "Careers",
-  "title": "Build a career in nephrology care.",
-  "lead": "We hire for empathy first — the medicine we can teach.",
-  "open_roles_title": "Open roles",
-  "no_open_roles": "No openings right now. Send your CV and we'll keep it on file.",
-  "how_to_apply_title": "How to apply",
-  "how_to_apply_body": "Email your CV to {email} with the role in the subject line. We respond to every application within a week.",
-  "what_we_look_for_title": "What we look for",
+  "eyebrow": "करियर",
+  "title": "नेफ्रोलॉजी देखभाल में करियर बनाइए।",
+  "lead": "हम पहले सहानुभूति देखते हैं — चिकित्सा हम सिखा सकते हैं।",
+  "open_roles_title": "खुले पद",
+  "no_open_roles": "अभी कोई पद खुला नहीं है। अपना CV भेजिए, हम फ़ाइल में रख लेंगे।",
+  "how_to_apply_title": "आवेदन कैसे करें",
+  "how_to_apply_body": "अपना CV {email} पर भेजिए — विषय में पद का नाम लिखिए। हम हर आवेदन का एक सप्ताह में जवाब देते हैं।",
+  "what_we_look_for_title": "हम क्या ढूँढ़ते हैं",
   "what_we_look_for": [
-    "Patience with patients and families.",
-    "Plain language. No medical jargon-first.",
-    "Curiosity about evidence — we read journals together.",
-    "Comfort working in a team that crosses departments."
+    "मरीज़ों और परिवारों के साथ धैर्य।",
+    "सरल भाषा। मेडिकल जारगन सबसे पहले नहीं।",
+    "साक्ष्य के प्रति जिज्ञासा — हम मिलकर जर्नल पढ़ते हैं।",
+    "एक टीम में सहज, जो विभागों के पार काम करती है।"
   ]
 }

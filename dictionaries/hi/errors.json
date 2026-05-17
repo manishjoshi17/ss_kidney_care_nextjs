@@ -1,23 +1,23 @@
 {
   "form": {
-    "name_required": "We'll need a name so we know how to greet you.",
-    "email_invalid": "That doesn't look like an email — could you double-check?",
-    "phone_required": "We'll need a phone number to call you on.",
-    "phone_invalid": "Please check the phone number — it should include the country code.",
-    "message_too_short": "Please add a bit more so we can help — even a sentence or two is fine.",
-    "reason_required": "Pick a reason so we can route this to the right team.",
-    "unknown": "Something on our end went wrong. Could you try again, or call the hospital directly?"
+    "name_required": "हमें एक नाम चाहिए ताकि हम जान सकें कि आपको कैसे संबोधित करें।",
+    "email_invalid": "यह ईमेल जैसा नहीं दिख रहा — एक बार और जाँच कीजिए?",
+    "phone_required": "आपको कॉल करने के लिए हमें एक फ़ोन नंबर चाहिए।",
+    "phone_invalid": "कृपया फ़ोन नंबर जाँचें — इसमें देश का कोड होना चाहिए।",
+    "message_too_short": "थोड़ा और लिख दीजिए ताकि हम मदद कर सकें — एक-दो वाक्य भी काफ़ी हैं।",
+    "reason_required": "एक कारण चुनिए ताकि हम इसे सही टीम तक पहुँचा सकें।",
+    "unknown": "हमारी तरफ़ कुछ ग़लत हो गया। क्या आप फिर कोशिश कर सकते हैं, या सीधे क्लिनिक पर कॉल कर सकते हैं?"
   },
-  "rate_limited": "We've received your messages — give us a moment to read them.",
-  "network": "The form couldn't go through. Check your connection and try again.",
+  "rate_limited": "हमें आपके संदेश मिल गए हैं — उन्हें पढ़ने के लिए हमें एक पल दीजिए।",
+  "network": "फ़ॉर्म नहीं जा पाया। अपना कनेक्शन जाँचें और फिर कोशिश करें।",
   "page": {
-    "title_404": "Looks like that page wandered off.",
-    "title_500": "Our servers had a hiccup.",
-    "body_404": "We couldn't find what you were looking for. Try the search, or pick a starting point.",
-    "body_500": "Try again in a moment. If it's urgent, please call our 24×7 emergency line."
+    "title_404": "लगता है वो पेज कहीं भटक गया।",
+    "title_500": "हमारे सर्वर में थोड़ी अड़चन आ गई।",
+    "body_404": "हमें वो नहीं मिला जो आप ढूँढ़ रहे थे। सर्च आज़माएँ, या एक शुरुआती बिंदु चुनिए।",
+    "body_500": "थोड़ी देर में फिर कोशिश कीजिए। अगर ज़रूरी है, कृपया हमारी 24×7 इमरजेंसी लाइन पर कॉल करें।"
   },
   "empty": {
-    "no_results": "Nothing matches that. Try clearing filters.",
-    "coming_soon": "Coming soon. Check back, or get in touch in the meantime."
+    "no_results": "इससे कुछ मेल नहीं हुआ। फ़िल्टर हटाकर देखें।",
+    "coming_soon": "जल्द आ रहा है। दोबारा देखिए, या इस बीच हमसे संपर्क करें।"
   }
 }
